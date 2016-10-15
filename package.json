@@ -2,9 +2,10 @@
   "name": "transcript-model",
   "version": "0.0.1",
   "description": "JSON schema and JavaScript model classes for dealing with time-aligned transcripts of speech.",
-  "main": "index.js",
+  "main": "lib/bundle.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "webpack"
   },
   "repository": {
     "type": "git",
@@ -34,5 +35,8 @@
     "presets": [
       "es2015"
     ]
-  }
+  },
+  "files": [
+    "lib/"
+  ]
 }
