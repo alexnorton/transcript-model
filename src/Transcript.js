@@ -5,6 +5,8 @@ import TranscriptSegment from './TranscriptSegment';
 import TranscriptWord from './TranscriptWord';
 import Speaker from './Speaker';
 
+import schema from '../schema.json';
+
 const TranscriptRecord = new Immutable.Record({
   speakers: new Immutable.List(),
   segments: new Immutable.List(),
@@ -75,7 +77,7 @@ class Transcript extends TranscriptRecord {
 
   static validateJSON(json) {
     const ajv = new Ajv();
-    const valid = ajv.validate(this.jsonSchema, json);
+    const valid = ajv.validate(schema, json);
     if (!valid) {
       throw new Error(`invalid transcript JSON:\n${JSON.stringify(ajv.errors, null, 2)}`);
     }
@@ -98,73 +100,5 @@ class Transcript extends TranscriptRecord {
     };
   }
 }
-
-Transcript.jsonSchema = {
-  type: 'object',
-  properties: {
-    speakers: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          name: {
-            type: ['string', 'null'],
-          },
-        },
-        required: [
-          'name',
-        ],
-      },
-    },
-    segments: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          speaker: {
-            type: 'integer',
-          },
-          words: {
-            type: 'array',
-            items: {
-              type: 'object',
-              properties: {
-                text: {
-                  type: 'string',
-                },
-                start: {
-                  type: 'number',
-                },
-                end: {
-                  type: 'number',
-                },
-                guid: {
-                  type: 'string',
-                  format: 'uuid',
-                },
-              },
-              required: [
-                'text',
-                'start',
-                'end',
-              ],
-              additionalProperties: false,
-            },
-          },
-        },
-        required: [
-          'speaker',
-          'words',
-        ],
-        additionalProperties: false,
-      },
-    },
-  },
-  additionalProperties: false,
-  required: [
-    'speakers',
-    'segments',
-  ],
-};
 
 export default Transcript;
