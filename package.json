@@ -4,7 +4,7 @@
   "description": "JSON schema and JavaScript model classes for dealing with time-aligned transcripts of speech.",
   "main": "lib/bundle.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "prepublish": "webpack"
   },
   "repository": {
