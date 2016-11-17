@@ -25,38 +25,67 @@
         "properties": {
           "speaker": {
             "type": "integer"
-          },
-          "words": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "text": {
-                  "type": "string"
-                },
-                "start": {
-                  "type": "number"
-                },
-                "end": {
-                  "type": "number"
-                },
-                "guid": {
-                  "type": "string",
-                  "format": "uuid"
-                }
-              },
-              "required": [
-                "text",
-                "start",
-                "end"
-              ],
-              "additionalProperties": false
-            }
           }
         },
+        "oneOf": [
+          {
+            "words": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "text"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            }
+          },
+          {
+            "intervals": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "start": {
+                    "type": "number"
+                  },
+                  "end": {
+                    "type": "number"
+                  },
+                  "words": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "text"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 1
+                  },
+                  "required": [
+                    "start",
+                    "end",
+                    "words"
+                  ]
+                }
+              }
+            }
+          }
+        ],
         "required": [
-          "speaker",
-          "words"
+          "speaker"
         ],
         "additionalProperties": false
       }
