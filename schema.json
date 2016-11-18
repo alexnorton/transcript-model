@@ -1,5 +1,19 @@
 {
   "type": "object",
+  "definitions": {
+    "word": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "additionalProperties": false
+    }
+  },
   "properties": {
     "speakers": {
       "type": "array",
@@ -32,16 +46,7 @@
             "words": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {
-                  "text": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "text"
-                ],
-                "additionalProperties": false
+                "$ref": "#word"
               },
               "minItems": 1
             }
@@ -61,16 +66,7 @@
                   "words": {
                     "type": "array",
                     "items": {
-                      "type": "object",
-                      "properties": {
-                        "text": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "text"
-                      ],
-                      "additionalProperties": false
+                      "$ref": "#word"
                     },
                     "minItems": 1
                   },
