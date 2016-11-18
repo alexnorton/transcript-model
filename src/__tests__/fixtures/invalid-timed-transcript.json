@@ -1,0 +1,41 @@
+{
+  "speakers": [
+    {
+      "name": "Barack Obama"
+    },
+    {
+      "name": null
+    }
+  ],
+  "segments": [
+    {
+      "intervals": [
+        {
+          "words": [
+            {
+              "text": "Hello"
+            }
+          ]
+        },
+        {
+          "words": [
+            {
+              "text": "Donald!"
+            }
+          ]
+        },
+        {
+          "words": [
+            {
+              "text": "Hi"
+            },
+            {
+              "text": "Barack."
+            }
+          ]
+        }
+      ],
+      "speaker": 0
+    }
+  ]
+}

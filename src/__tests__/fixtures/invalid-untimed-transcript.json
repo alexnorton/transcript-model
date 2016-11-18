@@ -1,0 +1,30 @@
+{
+  "speakers": [
+    {
+      "name": "Barack Obama"
+    },
+    {
+      "name": null
+    }
+  ],
+  "segments": [
+    {
+      "words": [
+        {},
+        {}
+      ],
+      "speaker": 0
+    },
+    {
+      "words": [
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Barack."
+        }
+      ],
+      "speaker": 1
+    }
+  ]
+}

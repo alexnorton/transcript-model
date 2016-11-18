@@ -2,6 +2,7 @@
   "type": "object",
   "definitions": {
     "word": {
+      "id": "#word",
       "type": "object",
       "properties": {
         "text": {
@@ -12,6 +13,30 @@
         "text"
       ],
       "additionalProperties": false
+    },
+    "interval": {
+      "id": "#interval",
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "number"
+        },
+        "end": {
+          "type": "number"
+        },
+        "words": {
+          "type": "array",
+          "items": {
+            "$ref": "#word"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "words"
+      ]
     }
   },
   "properties": {
@@ -39,47 +64,21 @@
         "properties": {
           "speaker": {
             "type": "integer"
+          },
+          "words": {
+            "type": "array",
+            "items": {
+              "$ref": "#word"
+            },
+            "minItems": 1
+          },
+          "intervals": {
+            "type": "array",
+            "items": {
+              "$ref": "#interval"
+            }
           }
         },
-        "oneOf": [
-          {
-            "words": {
-              "type": "array",
-              "items": {
-                "$ref": "#word"
-              },
-              "minItems": 1
-            }
-          },
-          {
-            "intervals": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "start": {
-                    "type": "number"
-                  },
-                  "end": {
-                    "type": "number"
-                  },
-                  "words": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#word"
-                    },
-                    "minItems": 1
-                  },
-                  "required": [
-                    "start",
-                    "end",
-                    "words"
-                  ]
-                }
-              }
-            }
-          }
-        ],
         "required": [
           "speaker"
         ],

@@ -2,41 +2,45 @@ import fs from 'fs';
 import path from 'path';
 
 import Transcript from '../Transcript';
-import TranscriptSegment from '../TranscriptSegment';
-import TranscriptWord from '../TranscriptWord';
+import UntimedSegment from '../UntimedSegment';
+import Word from '../Word';
 
 import Speaker from '../Speaker';
 
 describe('validateJSON', () => {
-  it('correctly validates valid transcripts', () => {
+  it('should correctly validate an un-timed Transcript', () => {
     const validTranscript = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/valid-transcript.json'), 'utf8'
+      path.join(__dirname, '/fixtures/valid-untimed-transcript.json'), 'utf8',
     ));
-
     expect(Transcript.validateJSON(validTranscript)).toBe(true);
   });
 
-  it('correctly validates valid transcripts with GUIDs', () => {
+  it('should correctly invalidate an un-timed Transcript', () => {
     const validTranscript = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'
+      path.join(__dirname, '/fixtures/invalid-untimed-transcript.json'), 'utf8',
     ));
+    expect(() => Transcript.validateJSON(validTranscript)).toThrow();
+  });
 
+  it('should correctly validate a timed Transcript', () => {
+    const validTranscript = JSON.parse(fs.readFileSync(
+      path.join(__dirname, '/fixtures/valid-timed-transcript.json'), 'utf8',
+    ));
     expect(Transcript.validateJSON(validTranscript)).toBe(true);
   });
 
-  it('correctly validates invalid transcript', () => {
-    const invalidTranscript = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/invalid-transcript.json'), 'utf8'
+  it('should correctly invalidate a timed Transcript', () => {
+    const validTranscript = JSON.parse(fs.readFileSync(
+      path.join(__dirname, '/fixtures/invalid-untimed-transcript.json'), 'utf8',
     ));
-
-    expect(() => Transcript.validateJSON(invalidTranscript)).toThrow();
+    expect(() => Transcript.validateJSON(validTranscript)).toThrow();
   });
 });
 
 describe('fromJSON', () => {
-  it('creates an instance from JSON', () => {
+  it('creates an instance from un-timed JSON data', () => {
     const transcriptJSON = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'
+      path.join(__dirname, '/fixtures/valid-untimed-transcript.json'), 'utf8',
     ));
 
     const transcript = Transcript.fromJSON(transcriptJSON);
@@ -51,42 +55,41 @@ describe('fromJSON', () => {
     ]);
 
     expect(transcript.get('segments').size).toBe(2);
-    expect(transcript.get('segments').get(1) instanceof TranscriptSegment).toBe(true);
+    expect(transcript.get('segments').get(1) instanceof UntimedSegment).toBe(true);
 
     expect(transcript.get('segments').get(1).toJS()).toEqual({
       speaker: 1,
       words: [
         {
           text: 'Hi',
-          start: 1.53,
-          end: 1.88,
-          id: '74DDAC87-E7B6-4DB3-AC48-9CA5FFEDF48A',
         },
         {
           text: 'Barack.',
-          start: 1.92,
-          end: 2.33,
-          id: '11303237-8E06-420B-87B1-1E16DF026985',
         },
       ],
     });
 
     const word = transcript.get('segments').get(1).get('words').get(0);
-    expect(word instanceof TranscriptWord).toBe(true);
+    expect(word instanceof Word).toBe(true);
+  });
+
+  xit('creates an instance from timed JSON data', () => {
   });
 });
 
 
 describe('toJSON', () => {
-  it('produces valid transcript JSON', () => {
+  it('produces valid un-timed JSON data', () => {
     const originalTranscriptJSON = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'
+      path.join(__dirname, '/fixtures/valid-untimed-transcript.json'), 'utf8',
     ));
 
     const transcript = Transcript.fromJSON(originalTranscriptJSON);
-
     const transcriptJSON = transcript.toJSON();
-
     expect(Transcript.validateJSON(transcriptJSON)).toBe(true);
+  });
+
+  xit('produces valid timed JSON data', () => {
+
   });
 });
