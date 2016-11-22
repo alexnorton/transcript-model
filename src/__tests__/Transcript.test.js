@@ -93,3 +93,13 @@ describe('toJSON', () => {
 
   });
 });
+
+describe('getText', () => {
+  it('return the text of all segments', () => {
+    const originalTranscriptJSON = JSON.parse(fs.readFileSync(
+      path.join(__dirname, '/fixtures/valid-untimed-transcript.json'), 'utf8',
+    ));
+    const transcript = Transcript.fromJSON(originalTranscriptJSON);
+    expect(transcript.getText()).toEqual('Hello Donald! Hi Barack.');
+  });
+});

@@ -13,6 +13,14 @@ const TranscriptRecord = new Immutable.Record({
 });
 
 class Transcript extends TranscriptRecord {
+
+  getText() {
+    return this
+      .get('segments')
+      .reduce((text, segment) => `${text} ${segment.getText()}`, '')
+      .trim();
+  }
+
   static fromJSON(json) {
     this.validateJSON(json);
 
