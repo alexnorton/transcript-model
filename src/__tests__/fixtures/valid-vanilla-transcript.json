@@ -1,0 +1,27 @@
+{
+  "speakers": [],
+  "segments": [
+    {
+      "words": [
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Donald!"
+        }
+      ],
+      "speaker": 0
+    },
+    {
+      "words": [
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Barack."
+        }
+      ],
+      "speaker": 0
+    }
+  ]
+}

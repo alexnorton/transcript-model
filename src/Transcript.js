@@ -17,7 +17,7 @@ class Transcript extends TranscriptRecord {
   getText() {
     return this
       .get('segments')
-      .reduce((text, segment) => `${text} ${segment.getText()}`, '')
+      .reduce((text, segment) => `${text}\n${segment.getText()}`, '')
       .trim();
   }
 
@@ -52,6 +52,17 @@ class Transcript extends TranscriptRecord {
       throw new Error(`invalid transcript JSON:\n${JSON.stringify(ajv.errors, null, 2)}`);
     }
     return true;
+  }
+
+  static fromText(text) {
+    return new Transcript({
+      segments: Immutable.List(
+        text.trim().split('\n').map(line => new UntimedSegment({
+          speaker: 0,
+          words: new Immutable.List(line.split(' ').map(t => new Word({ text: t }))),
+        })),
+      ),
+    });
   }
 }
 

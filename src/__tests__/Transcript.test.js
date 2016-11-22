@@ -94,12 +94,22 @@ describe('toJSON', () => {
   });
 });
 
-describe('getText', () => {
+describe('toText', () => {
   it('return the text of all segments', () => {
     const originalTranscriptJSON = JSON.parse(fs.readFileSync(
       path.join(__dirname, '/fixtures/valid-untimed-transcript.json'), 'utf8',
     ));
     const transcript = Transcript.fromJSON(originalTranscriptJSON);
-    expect(transcript.getText()).toEqual('Hello Donald! Hi Barack.');
+    expect(transcript.getText()).toEqual('Hello Donald!\nHi Barack.');
+  });
+});
+
+describe('fromText', () => {
+  it('creates an vanilla instance of from a text string', () => {
+    const originalTranscriptJSON = JSON.parse(fs.readFileSync(
+      path.join(__dirname, '/fixtures/valid-vanilla-transcript.json'), 'utf8',
+    ));
+    const transcript = Transcript.fromText('Hello Donald!\nHi Barack.');
+    expect(transcript.toJSON()).toEqual(originalTranscriptJSON);
   });
 });
