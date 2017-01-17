@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/bbc/transcript-model#readme",
   "dependencies": {
-    "ajv": "^4.7.7",
+    "ajv": "^5.0.1-beta",
     "immutable": "^3.8.1"
   },
   "devDependencies": {
