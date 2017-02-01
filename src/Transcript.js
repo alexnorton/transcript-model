@@ -38,6 +38,7 @@ class Transcript extends TranscriptRecord {
                 text: w.punct,
                 start: w.start,
                 end: w.end,
+                confidence: w.confidence
               })
             )
           ),
@@ -59,11 +60,12 @@ class Transcript extends TranscriptRecord {
       json.segments.map(({ speaker, words }) => new TranscriptSegment({
         speaker,
         words: new Immutable.List(
-          words.map(({ start, end, text, guid }) => new TranscriptWord({
+          words.map(({ start, end, text, guid, confidence }) => new TranscriptWord({
             start,
             end,
             text,
             id: guid,
+            confidence
           }))
         ),
       }))
@@ -104,6 +106,7 @@ class Transcript extends TranscriptRecord {
                   text: w.word,
                   start: w.start,
                   end: w.end,
+                  confidence: w.confidence
                 })
               )
           ),
@@ -133,6 +136,7 @@ class Transcript extends TranscriptRecord {
           text: word.text,
           start: word.start,
           end: word.end,
+          confidence: word.confidence,
         })),
         speaker: segment.speaker,
       })),

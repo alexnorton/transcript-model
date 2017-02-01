@@ -5,6 +5,7 @@ const TranscriptWordRecord = new Immutable.Record({
   text: '',
   start: 0,
   end: 0,
+  confidence: 0
 });
 
 class TranscriptWord extends TranscriptWordRecord {
