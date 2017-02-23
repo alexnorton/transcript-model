@@ -1,6 +1,6 @@
 {
   "name": "transcript-model",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "JSON schema and JavaScript model classes for dealing with time-aligned transcripts of speech.",
   "main": "lib/bundle.js",
   "scripts": {
