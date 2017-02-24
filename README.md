@@ -1,6 +1,6 @@
 # transcript-model
 
-[![Build Status](https://travis-ci.org/bbc/transcript-model.svg?branch=master)](https://travis-ci.org/bbc/transcript-model)
+[![Build Status](https://travis-ci.org/bbc/transcript-model.svg?branch=master)](https://travis-ci.org/bbc/transcript-model) [![npm](https://img.shields.io/npm/v/transcript-model.svg)](https://www.npmjs.com/package/transcript-model)
 
 JSON schema and JavaScript model classes for dealing with time-aligned transcripts of speech.
 
