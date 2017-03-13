@@ -6,14 +6,24 @@ JSON schema and JavaScript model classes for dealing with time-aligned transcrip
 
 ## CLI
 
-A basic command line interface has been implemented to support conversion of Kaldi output to the transcript JSON format.
+A basic command line interface has been implemented to support conversion of BBC Kaldi output to the transcript JSON format.
+
+### Install
+
+```
+$ npm install -g transcript-model
+```
 
 ### Usage
 
-```bash
-# To write to STDOUT
-node cli --kaldi path/to/transcript.json path/to/segments.json
+To write to STDOUT:
 
-# To write to a file
-node cli --kaldi path/to/transcript.json path/to/segments.json > output.json
+```bash
+$ transcript-model --kaldi path/to/transcript.json path/to/segments.json
+```
+
+To write to a file:
+
+```
+$ transcript-model --kaldi path/to/transcript.json path/to/segments.json > output.json
 ```
