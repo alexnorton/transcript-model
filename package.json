@@ -7,6 +7,9 @@
     "test": "jest",
     "prepublish": "webpack"
   },
+  "bin": {
+    "transcript-model": "./bin/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bbc/transcript-model.git"
@@ -38,6 +41,7 @@
     ]
   },
   "files": [
-    "lib/"
+    "lib/",
+    "bin/"
   ]
 }

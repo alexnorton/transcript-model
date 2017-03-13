@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 /* eslint-disable no-console */
 
-const { Transcript } = require('./lib/bundle');
+const { Transcript } = require('../lib/bundle');
 const fs = require('fs');
 
 const [mode, ...inputs] = process.argv.slice(2);
