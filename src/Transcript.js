@@ -123,6 +123,24 @@ class Transcript extends TranscriptRecord {
     return true;
   }
 
+  slice(start = 0, end) {
+    const segments = this.segments
+      .filter(segment => segment.getEnd() > start && (segment.getStart() < end || !end))
+      .map(segment => new TranscriptSegment({
+        speaker: segment.speaker,
+        words: segment.words
+          .filter(word => word.end > start && (word.start < end || !end))
+          .map(word => new TranscriptWord({
+            start: (word.start - start) >= 0 ? word.start - start : 0,
+            end: word.end - start,
+            id: word.id,
+            text: word.text,
+          })),
+      }));
+
+    return new Transcript({ speakers: this.speakers, segments });
+  }
+
   toJSON() {
     return {
       speakers: this.speakers.toArray().map(speaker => ({
