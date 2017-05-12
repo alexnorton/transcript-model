@@ -8,19 +8,9 @@
     },
     {
       "name": null
-    },
-    {
-      "name": null
-    },
-    {
-      "name": null
     }
   ],
   "segments": [
-    {
-      "words": [],
-      "speaker": 0
-    },
     {
       "words": [
         {
@@ -69,11 +59,7 @@
           "end": 23.95
         }
       ],
-      "speaker": 1
-    },
-    {
-      "words": [],
-      "speaker": 1
+      "speaker": 0
     },
     {
       "words": [
@@ -173,7 +159,7 @@
           "end": 43.59
         }
       ],
-      "speaker": 2
+      "speaker": 1
     },
     {
       "words": [
@@ -338,7 +324,7 @@
           "end": 57.76
         }
       ],
-      "speaker": 2
+      "speaker": 1
     },
     {
       "words": [
@@ -398,7 +384,7 @@
           "end": 64.38
         }
       ],
-      "speaker": 2
+      "speaker": 1
     },
     {
       "words": [
@@ -428,7 +414,7 @@
           "end": 67.84
         }
       ],
-      "speaker": 2
+      "speaker": 1
     },
     {
       "words": [
@@ -573,7 +559,7 @@
           "end": 79.83
         }
       ],
-      "speaker": 2
+      "speaker": 1
     },
     {
       "words": [
@@ -703,7 +689,7 @@
           "end": 89.45
         }
       ],
-      "speaker": 2
+      "speaker": 1
     },
     {
       "words": [
@@ -813,7 +799,7 @@
           "end": 97.8
         }
       ],
-      "speaker": 2
+      "speaker": 1
     },
     {
       "words": [
@@ -1058,7 +1044,7 @@
           "end": 116.44
         }
       ],
-      "speaker": 2
+      "speaker": 1
     },
     {
       "words": [
@@ -1188,7 +1174,7 @@
           "end": 125.46
         }
       ],
-      "speaker": 2
+      "speaker": 1
     },
     {
       "words": [
@@ -1293,11 +1279,7 @@
           "end": 136.1
         }
       ],
-      "speaker": 3
-    },
-    {
-      "words": [],
-      "speaker": 4
+      "speaker": 2
     }
   ]
 }

@@ -7,38 +7,34 @@ import Transcript from '../Transcript';
 
 class MediaTaggerAdapter {
   static parse(json) {
-    // Create a map of Comma speaker IDs to numeric speaker IDs, e.g. S0: 0, S4: 1, ...
     const speakerIdMap = {};
-
-    const speakers = new Immutable.List(
-      json.commaSegments.segmentation.speakers.map((s, i) => {
-        speakerIdMap[s['@id']] = i;
-
-        // Comma doesn't give us speaker names so we just create a new "empty" Speaker
-        return new Speaker({
-          name: null,
-        });
-      })
-    );
+    const speakers = [];
 
     const segments = new Immutable.List(
-      json.commaSegments.segmentation.segments.map((s, i) =>
-        new TranscriptSegment({
-          speaker: speakerIdMap[s.speaker['@id']],
-          words: new Immutable.List(
-            json.commaSegments.segments.transcriptions[i].words.map(w =>
-              new TranscriptWord({
-                text: w.punct,
-                start: w.start,
-                end: w.end,
-              })
-            )
-          ),
+      json.commaSegments.segmentation.segments
+        .map((s, i) => Object.assign({}, s, { index: i }))
+        .filter((s, i) => json.commaSegments.segments.transcriptions[i].words.length > 0)
+        .map((s) => {
+          if (!speakerIdMap[s.speaker['@id']]) {
+            speakerIdMap[s.speaker['@id']] = speakers.push(new Speaker({ name: null })) - 1;
+          }
+
+          return new TranscriptSegment({
+            speaker: speakerIdMap[s.speaker['@id']],
+            words: new Immutable.List(
+              json.commaSegments.segments.transcriptions[s.index].words.map(w =>
+                new TranscriptWord({
+                  text: w.punct,
+                  start: w.start,
+                  end: w.end,
+                })
+              )
+            ),
+          });
         })
-      )
     );
 
-    return new Transcript({ speakers, segments });
+    return new Transcript({ speakers: new Immutable.List(speakers), segments });
   }
 }
 
