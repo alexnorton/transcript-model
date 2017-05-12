@@ -4,6 +4,8 @@ import Ajv from 'ajv';
 import TranscriptSegment from './TranscriptSegment';
 import TranscriptWord from './TranscriptWord';
 import Speaker from './Speaker';
+import KaldiAdapter from './adapters/KaldiAdapter';
+import MediaTaggerAdapter from './adapters/MediaTaggerAdapter';
 
 import schema from '../schema.json';
 
@@ -13,41 +15,6 @@ const TranscriptRecord = new Immutable.Record({
 });
 
 class Transcript extends TranscriptRecord {
-  static fromComma(json) {
-    // Create a map of Comma speaker IDs to numeric speaker IDs, e.g. S0: 0, S4: 1, ...
-    const speakerIdMap = {};
-
-    const speakers = new Immutable.List(
-      json.commaSegments.segmentation.speakers.map((s, i) => {
-        speakerIdMap[s['@id']] = i;
-
-        // Comma doesn't give us speaker names so we just create a new "empty" Speaker
-        return new Speaker({
-          name: null,
-        });
-      })
-    );
-
-    const segments = new Immutable.List(
-      json.commaSegments.segmentation.segments.map((s, i) =>
-        new TranscriptSegment({
-          speaker: speakerIdMap[s.speaker['@id']],
-          words: new Immutable.List(
-            json.commaSegments.segments.transcriptions[i].words.map(w =>
-              new TranscriptWord({
-                text: w.punct,
-                start: w.start,
-                end: w.end,
-              })
-            )
-          ),
-        })
-      )
-    );
-
-    return new Transcript({ speakers, segments });
-  }
-
   static fromJSON(json) {
     this.validateJSON(json);
 
@@ -75,43 +42,12 @@ class Transcript extends TranscriptRecord {
     });
   }
 
+  static fromMediaTagger(json) {
+    MediaTaggerAdapter.parse(json);
+  }
+
   static fromKaldi(transcriptJson, segmentsJson) {
-    // Create a map of Kaldi speaker IDs to numeric speaker IDs, e.g. S0: 0, S4: 1, ...
-    const speakerIdMap = {};
-
-    const speakers = new Immutable.List(
-      segmentsJson.speakers.map((s, i) => {
-        speakerIdMap[s['@id']] = i;
-
-        // Comma doesn't give us speaker names so we just create a new "empty" Speaker
-        return new Speaker({
-          name: null,
-        });
-      })
-    );
-
-    const segments = new Immutable.List(
-      segmentsJson.segments.map(s =>
-        new TranscriptSegment({
-          speaker: speakerIdMap[s.speaker['@id']],
-          words: new Immutable.List(
-            transcriptJson.words
-              .filter(({ start, end }) =>
-                start >= s.start && end <= s.start + s.duration
-              )
-              .map(w =>
-                new TranscriptWord({
-                  text: w.word,
-                  start: w.start,
-                  end: w.end,
-                })
-              )
-          ),
-        })
-      )
-    );
-
-    return new Transcript({ speakers, segments });
+    return KaldiAdapter.parse(transcriptJson, segmentsJson);
   }
 
   static validateJSON(json) {
