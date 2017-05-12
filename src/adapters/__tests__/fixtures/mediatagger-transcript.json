@@ -1,0 +1,1303 @@
+{
+  "speakers": [
+    {
+      "name": null
+    },
+    {
+      "name": null
+    },
+    {
+      "name": null
+    },
+    {
+      "name": null
+    },
+    {
+      "name": null
+    }
+  ],
+  "segments": [
+    {
+      "words": [],
+      "speaker": 0
+    },
+    {
+      "words": [
+        {
+          "text": "Right,",
+          "start": 13.1,
+          "end": 13.58
+        },
+        {
+          "text": "then.",
+          "start": 13.62,
+          "end": 13.91
+        },
+        {
+          "text": "Are",
+          "start": 14.09,
+          "end": 14.72
+        },
+        {
+          "text": "you",
+          "start": 15.04,
+          "end": 15.33
+        },
+        {
+          "text": "off",
+          "start": 15.34,
+          "end": 15.66
+        },
+        {
+          "text": "or",
+          "start": 16.03,
+          "end": 17.86
+        },
+        {
+          "text": "I'll",
+          "start": 21.22,
+          "end": 21.69
+        },
+        {
+          "text": "be",
+          "start": 22.39,
+          "end": 22.76
+        },
+        {
+          "text": "o.k.",
+          "start": 23.6,
+          "end": 23.95
+        }
+      ],
+      "speaker": 1
+    },
+    {
+      "words": [],
+      "speaker": 1
+    },
+    {
+      "words": [
+        {
+          "text": "Thank",
+          "start": 38.16,
+          "end": 38.44
+        },
+        {
+          "text": "you",
+          "start": 38.44,
+          "end": 38.56
+        },
+        {
+          "text": "very",
+          "start": 38.56,
+          "end": 38.82
+        },
+        {
+          "text": "much.",
+          "start": 38.82,
+          "end": 39.12
+        },
+        {
+          "text": "Can",
+          "start": 39.15,
+          "end": 39.32
+        },
+        {
+          "text": "I",
+          "start": 39.32,
+          "end": 39.41
+        },
+        {
+          "text": "just",
+          "start": 39.41,
+          "end": 39.67
+        },
+        {
+          "text": "say",
+          "start": 39.67,
+          "end": 39.94
+        },
+        {
+          "text": "this",
+          "start": 39.95,
+          "end": 40.39
+        },
+        {
+          "text": "first",
+          "start": 40.58,
+          "end": 40.91
+        },
+        {
+          "text": "of",
+          "start": 40.91,
+          "end": 41
+        },
+        {
+          "text": "all.",
+          "start": 41,
+          "end": 41.31
+        },
+        {
+          "text": "Thank",
+          "start": 41.39,
+          "end": 41.7
+        },
+        {
+          "text": "you",
+          "start": 41.7,
+          "end": 41.85
+        },
+        {
+          "text": "all",
+          "start": 41.85,
+          "end": 42.01
+        },
+        {
+          "text": "for",
+          "start": 42.01,
+          "end": 42.12
+        },
+        {
+          "text": "coming",
+          "start": 42.12,
+          "end": 42.45
+        },
+        {
+          "text": "here",
+          "start": 42.45,
+          "end": 42.83
+        },
+        {
+          "text": "today.",
+          "start": 43.01,
+          "end": 43.59
+        }
+      ],
+      "speaker": 2
+    },
+    {
+      "words": [
+        {
+          "text": "We",
+          "start": 44.11,
+          "end": 44.28
+        },
+        {
+          "text": "just",
+          "start": 44.3,
+          "end": 44.6
+        },
+        {
+          "text": "concluded",
+          "start": 44.6,
+          "end": 45.21
+        },
+        {
+          "text": "a",
+          "start": 45.21,
+          "end": 45.37
+        },
+        {
+          "text": "meeting",
+          "start": 45.37,
+          "end": 45.92
+        },
+        {
+          "text": "a",
+          "start": 45.92,
+          "end": 46
+        },
+        {
+          "text": "joint",
+          "start": 46,
+          "end": 46.33
+        },
+        {
+          "text": "meeting",
+          "start": 46.33,
+          "end": 46.69
+        },
+        {
+          "text": "of",
+          "start": 46.69,
+          "end": 46.79
+        },
+        {
+          "text": "the",
+          "start": 46.79,
+          "end": 46.88
+        },
+        {
+          "text": "shadow",
+          "start": 46.88,
+          "end": 47.2
+        },
+        {
+          "text": "cabinet",
+          "start": 47.2,
+          "end": 47.69
+        },
+        {
+          "text": "and",
+          "start": 47.69,
+          "end": 47.82
+        },
+        {
+          "text": "the",
+          "start": 47.82,
+          "end": 47.9
+        },
+        {
+          "text": "National",
+          "start": 47.9,
+          "end": 48.26
+        },
+        {
+          "text": "Executive",
+          "start": 48.26,
+          "end": 49.07
+        },
+        {
+          "text": "and",
+          "start": 49.69,
+          "end": 50.21
+        },
+        {
+          "text": "discuss",
+          "start": 50.61,
+          "end": 51.32
+        },
+        {
+          "text": "a",
+          "start": 51.69,
+          "end": 51.88
+        },
+        {
+          "text": "manifesto",
+          "start": 51.89,
+          "end": 52.6
+        },
+        {
+          "text": "for",
+          "start": 52.6,
+          "end": 52.7
+        },
+        {
+          "text": "the",
+          "start": 52.7,
+          "end": 52.82
+        },
+        {
+          "text": "general",
+          "start": 52.82,
+          "end": 53.19
+        },
+        {
+          "text": "election.",
+          "start": 53.19,
+          "end": 53.7
+        },
+        {
+          "text": "We",
+          "start": 54.04,
+          "end": 54.15
+        },
+        {
+          "text": "just",
+          "start": 54.29,
+          "end": 54.7
+        },
+        {
+          "text": "unanimously",
+          "start": 54.79,
+          "end": 55.77
+        },
+        {
+          "text": "agreed",
+          "start": 55.77,
+          "end": 56.36
+        },
+        {
+          "text": "the",
+          "start": 56.53,
+          "end": 56.61
+        },
+        {
+          "text": "contents",
+          "start": 56.63,
+          "end": 57.25
+        },
+        {
+          "text": "of",
+          "start": 57.28,
+          "end": 57.49
+        },
+        {
+          "text": "it.",
+          "start": 57.49,
+          "end": 57.76
+        }
+      ],
+      "speaker": 2
+    },
+    {
+      "words": [
+        {
+          "text": "We've",
+          "start": 58.34,
+          "end": 58.73
+        },
+        {
+          "text": "mended.",
+          "start": 59.08,
+          "end": 59.72
+        },
+        {
+          "text": "Draft",
+          "start": 59.95,
+          "end": 60.26
+        },
+        {
+          "text": "document",
+          "start": 60.36,
+          "end": 60.82
+        },
+        {
+          "text": "was",
+          "start": 60.84,
+          "end": 60.99
+        },
+        {
+          "text": "put",
+          "start": 60.99,
+          "end": 61.2
+        },
+        {
+          "text": "forward",
+          "start": 61.2,
+          "end": 61.69
+        },
+        {
+          "text": "in",
+          "start": 61.88,
+          "end": 62.06
+        },
+        {
+          "text": "the",
+          "start": 62.06,
+          "end": 62.17
+        },
+        {
+          "text": "most",
+          "start": 62.17,
+          "end": 62.76
+        },
+        {
+          "text": "informed.",
+          "start": 63.43,
+          "end": 64.38
+        }
+      ],
+      "speaker": 2
+    },
+    {
+      "words": [
+        {
+          "text": "Interesting",
+          "start": 64.77,
+          "end": 65.62
+        },
+        {
+          "text": "sensible",
+          "start": 65.91,
+          "end": 66.75
+        },
+        {
+          "text": "discussion",
+          "start": 66.88,
+          "end": 67.43
+        },
+        {
+          "text": "and",
+          "start": 67.43,
+          "end": 67.51
+        },
+        {
+          "text": "debate",
+          "start": 67.51,
+          "end": 67.84
+        }
+      ],
+      "speaker": 2
+    },
+    {
+      "words": [
+        {
+          "text": "in",
+          "start": 68.45,
+          "end": 68.72
+        },
+        {
+          "text": "a",
+          "start": 68.75,
+          "end": 68.91
+        },
+        {
+          "text": "party",
+          "start": 68.91,
+          "end": 69.48
+        },
+        {
+          "text": "and",
+          "start": 69.94,
+          "end": 70.2
+        },
+        {
+          "text": "will",
+          "start": 70.24,
+          "end": 70.44
+        },
+        {
+          "text": "present",
+          "start": 70.43,
+          "end": 70.84
+        },
+        {
+          "text": "his",
+          "start": 70.85,
+          "end": 71
+        },
+        {
+          "text": "manifesto.",
+          "start": 71.02,
+          "end": 71.82
+        },
+        {
+          "text": "British",
+          "start": 72.21,
+          "end": 72.56
+        },
+        {
+          "text": "people",
+          "start": 72.56,
+          "end": 73.08
+        },
+        {
+          "text": "in",
+          "start": 73.26,
+          "end": 73.39
+        },
+        {
+          "text": "the",
+          "start": 73.39,
+          "end": 73.46
+        },
+        {
+          "text": "next",
+          "start": 73.46,
+          "end": 73.71
+        },
+        {
+          "text": "few",
+          "start": 73.71,
+          "end": 73.87
+        },
+        {
+          "text": "days",
+          "start": 73.87,
+          "end": 74.4
+        },
+        {
+          "text": "will",
+          "start": 75.99,
+          "end": 76.16
+        },
+        {
+          "text": "be",
+          "start": 76.16,
+          "end": 76.28
+        },
+        {
+          "text": "an",
+          "start": 76.28,
+          "end": 76.38
+        },
+        {
+          "text": "offer.",
+          "start": 76.38,
+          "end": 76.8
+        },
+        {
+          "text": "We",
+          "start": 76.95,
+          "end": 77.23
+        },
+        {
+          "text": "believe",
+          "start": 77.23,
+          "end": 77.45
+        },
+        {
+          "text": "the",
+          "start": 77.54,
+          "end": 77.7
+        },
+        {
+          "text": "policies",
+          "start": 77.89,
+          "end": 78.41
+        },
+        {
+          "text": "in",
+          "start": 78.41,
+          "end": 78.53
+        },
+        {
+          "text": "it",
+          "start": 78.52,
+          "end": 78.68
+        },
+        {
+          "text": "are",
+          "start": 78.86,
+          "end": 78.99
+        },
+        {
+          "text": "very",
+          "start": 78.99,
+          "end": 79.26
+        },
+        {
+          "text": "popular",
+          "start": 79.26,
+          "end": 79.83
+        }
+      ],
+      "speaker": 2
+    },
+    {
+      "words": [
+        {
+          "text": "an",
+          "start": 80.32,
+          "end": 80.45
+        },
+        {
+          "text": "offer",
+          "start": 80.46,
+          "end": 80.91
+        },
+        {
+          "text": "that",
+          "start": 81.02,
+          "end": 81.1
+        },
+        {
+          "text": "will",
+          "start": 81.17,
+          "end": 81.35
+        },
+        {
+          "text": "transform",
+          "start": 81.35,
+          "end": 82
+        },
+        {
+          "text": "the",
+          "start": 82,
+          "end": 82.1
+        },
+        {
+          "text": "lives",
+          "start": 82.1,
+          "end": 82.68
+        },
+        {
+          "text": "of",
+          "start": 82.82,
+          "end": 82.97
+        },
+        {
+          "text": "many",
+          "start": 82.97,
+          "end": 83.21
+        },
+        {
+          "text": "people",
+          "start": 83.21,
+          "end": 83.69
+        },
+        {
+          "text": "in",
+          "start": 83.81,
+          "end": 83.93
+        },
+        {
+          "text": "our",
+          "start": 83.93,
+          "end": 84.08
+        },
+        {
+          "text": "society",
+          "start": 84.08,
+          "end": 84.84
+        },
+        {
+          "text": "and",
+          "start": 85.18,
+          "end": 85.42
+        },
+        {
+          "text": "ensure",
+          "start": 85.43,
+          "end": 86.06
+        },
+        {
+          "text": "we",
+          "start": 86.43,
+          "end": 86.67
+        },
+        {
+          "text": "have",
+          "start": 86.67,
+          "end": 86.79
+        },
+        {
+          "text": "a",
+          "start": 86.79,
+          "end": 86.87
+        },
+        {
+          "text": "government",
+          "start": 86.87,
+          "end": 87.33
+        },
+        {
+          "text": "in",
+          "start": 87.33,
+          "end": 87.47
+        },
+        {
+          "text": "Britain.",
+          "start": 87.47,
+          "end": 87.95
+        },
+        {
+          "text": "On",
+          "start": 88.38,
+          "end": 88.62
+        },
+        {
+          "text": "June,",
+          "start": 88.62,
+          "end": 88.85
+        },
+        {
+          "text": "the",
+          "start": 88.85,
+          "end": 88.99
+        },
+        {
+          "text": "eighth.",
+          "start": 88.99,
+          "end": 89.45
+        }
+      ],
+      "speaker": 2
+    },
+    {
+      "words": [
+        {
+          "text": "That",
+          "start": 89.82,
+          "end": 90.07
+        },
+        {
+          "text": "will",
+          "start": 90.07,
+          "end": 90.37
+        },
+        {
+          "text": "work",
+          "start": 90.47,
+          "end": 90.8
+        },
+        {
+          "text": "for",
+          "start": 90.8,
+          "end": 90.92
+        },
+        {
+          "text": "the",
+          "start": 90.92,
+          "end": 91.03
+        },
+        {
+          "text": "many.",
+          "start": 91.03,
+          "end": 91.43
+        },
+        {
+          "text": "Not",
+          "start": 91.58,
+          "end": 91.86
+        },
+        {
+          "text": "the",
+          "start": 91.86,
+          "end": 91.94
+        },
+        {
+          "text": "few.",
+          "start": 91.94,
+          "end": 92.41
+        },
+        {
+          "text": "Give",
+          "start": 92.83,
+          "end": 93.05
+        },
+        {
+          "text": "everyone",
+          "start": 93.05,
+          "end": 93.61
+        },
+        {
+          "text": "in",
+          "start": 93.78,
+          "end": 93.9
+        },
+        {
+          "text": "our",
+          "start": 93.92,
+          "end": 94.07
+        },
+        {
+          "text": "society,",
+          "start": 94.07,
+          "end": 94.89
+        },
+        {
+          "text": "a",
+          "start": 95.08,
+          "end": 95.22
+        },
+        {
+          "text": "decent",
+          "start": 95.23,
+          "end": 95.66
+        },
+        {
+          "text": "opportunity",
+          "start": 95.66,
+          "end": 96.48
+        },
+        {
+          "text": "and",
+          "start": 96.6,
+          "end": 96.72
+        },
+        {
+          "text": "a",
+          "start": 96.74,
+          "end": 96.82
+        },
+        {
+          "text": "decent",
+          "start": 96.82,
+          "end": 97.24
+        },
+        {
+          "text": "chance.",
+          "start": 97.24,
+          "end": 97.8
+        }
+      ],
+      "speaker": 2
+    },
+    {
+      "words": [
+        {
+          "text": "So",
+          "start": 98,
+          "end": 98.17
+        },
+        {
+          "text": "nobody's",
+          "start": 98.19,
+          "end": 98.62
+        },
+        {
+          "text": "ignored,",
+          "start": 98.64,
+          "end": 99.18
+        },
+        {
+          "text": "nobody's",
+          "start": 99.3,
+          "end": 99.75
+        },
+        {
+          "text": "forgotten.",
+          "start": 99.75,
+          "end": 100.3
+        },
+        {
+          "text": "And",
+          "start": 100.5,
+          "end": 100.67
+        },
+        {
+          "text": "nobody",
+          "start": 100.67,
+          "end": 100.86
+        },
+        {
+          "text": "is",
+          "start": 100.86,
+          "end": 101.21
+        },
+        {
+          "text": "left",
+          "start": 101.29,
+          "end": 101.56
+        },
+        {
+          "text": "behind",
+          "start": 101.56,
+          "end": 102.11
+        },
+        {
+          "text": "the",
+          "start": 102.49,
+          "end": 102.6
+        },
+        {
+          "text": "details",
+          "start": 102.61,
+          "end": 103.4
+        },
+        {
+          "text": "will",
+          "start": 103.55,
+          "end": 103.7
+        },
+        {
+          "text": "be",
+          "start": 103.7,
+          "end": 103.82
+        },
+        {
+          "text": "published",
+          "start": 103.82,
+          "end": 104.49
+        },
+        {
+          "text": "in",
+          "start": 104.63,
+          "end": 104.76
+        },
+        {
+          "text": "the",
+          "start": 104.76,
+          "end": 104.83
+        },
+        {
+          "text": "next",
+          "start": 104.83,
+          "end": 105.08
+        },
+        {
+          "text": "few",
+          "start": 105.08,
+          "end": 105.25
+        },
+        {
+          "text": "days,",
+          "start": 105.25,
+          "end": 105.78
+        },
+        {
+          "text": "the",
+          "start": 106.08,
+          "end": 106.21
+        },
+        {
+          "text": "details",
+          "start": 106.22,
+          "end": 106.95
+        },
+        {
+          "text": "will",
+          "start": 107.1,
+          "end": 107.29
+        },
+        {
+          "text": "be",
+          "start": 107.29,
+          "end": 107.41
+        },
+        {
+          "text": "set",
+          "start": 107.41,
+          "end": 107.74
+        },
+        {
+          "text": "out",
+          "start": 107.74,
+          "end": 107.98
+        },
+        {
+          "text": "to",
+          "start": 107.98,
+          "end": 108.22
+        },
+        {
+          "text": "you,",
+          "start": 108.22,
+          "end": 108.49
+        },
+        {
+          "text": "including",
+          "start": 108.63,
+          "end": 109.41
+        },
+        {
+          "text": "the",
+          "start": 109.7,
+          "end": 109.79
+        },
+        {
+          "text": "costings",
+          "start": 109.82,
+          "end": 110.59
+        },
+        {
+          "text": "of",
+          "start": 110.71,
+          "end": 110.94
+        },
+        {
+          "text": "all",
+          "start": 110.97,
+          "end": 111.46
+        },
+        {
+          "text": "the",
+          "start": 111.55,
+          "end": 111.6
+        },
+        {
+          "text": "pledges",
+          "start": 111.65,
+          "end": 112.24
+        },
+        {
+          "text": "promises",
+          "start": 112.44,
+          "end": 113.05
+        },
+        {
+          "text": "we",
+          "start": 113.24,
+          "end": 113.42
+        },
+        {
+          "text": "make",
+          "start": 113.42,
+          "end": 113.75
+        },
+        {
+          "text": "and",
+          "start": 114.01,
+          "end": 114.14
+        },
+        {
+          "text": "I",
+          "start": 114.17,
+          "end": 114.28
+        },
+        {
+          "text": "know",
+          "start": 114.28,
+          "end": 114.76
+        },
+        {
+          "text": "you're",
+          "start": 114.85,
+          "end": 115.06
+        },
+        {
+          "text": "all",
+          "start": 115.06,
+          "end": 115.23
+        },
+        {
+          "text": "looking",
+          "start": 115.23,
+          "end": 115.52
+        },
+        {
+          "text": "forward",
+          "start": 115.52,
+          "end": 115.83
+        },
+        {
+          "text": "to",
+          "start": 115.83,
+          "end": 115.95
+        },
+        {
+          "text": "reading",
+          "start": 115.95,
+          "end": 116.32
+        },
+        {
+          "text": "it",
+          "start": 116.32,
+          "end": 116.44
+        }
+      ],
+      "speaker": 2
+    },
+    {
+      "words": [
+        {
+          "text": "in",
+          "start": 116.57,
+          "end": 116.73
+        },
+        {
+          "text": "great",
+          "start": 116.73,
+          "end": 117.05
+        },
+        {
+          "text": "detail",
+          "start": 117.05,
+          "end": 117.63
+        },
+        {
+          "text": "at",
+          "start": 117.73,
+          "end": 117.88
+        },
+        {
+          "text": "that",
+          "start": 117.89,
+          "end": 118.16
+        },
+        {
+          "text": "time",
+          "start": 118.16,
+          "end": 118.6
+        },
+        {
+          "text": "at",
+          "start": 118.92,
+          "end": 119.12
+        },
+        {
+          "text": "that",
+          "start": 119.17,
+          "end": 119.48
+        },
+        {
+          "text": "point",
+          "start": 119.48,
+          "end": 119.78
+        },
+        {
+          "text": "there",
+          "start": 119.78,
+          "end": 120.1
+        },
+        {
+          "text": "at",
+          "start": 120.42,
+          "end": 120.6
+        },
+        {
+          "text": "that",
+          "start": 120.64,
+          "end": 120.94
+        },
+        {
+          "text": "point.",
+          "start": 120.94,
+          "end": 121.52
+        },
+        {
+          "text": "You'll",
+          "start": 121.68,
+          "end": 121.92
+        },
+        {
+          "text": "be",
+          "start": 121.96,
+          "end": 122.05
+        },
+        {
+          "text": "able",
+          "start": 122.05,
+          "end": 122.23
+        },
+        {
+          "text": "to",
+          "start": 122.23,
+          "end": 122.37
+        },
+        {
+          "text": "ask",
+          "start": 122.37,
+          "end": 122.73
+        },
+        {
+          "text": "all",
+          "start": 122.82,
+          "end": 123.09
+        },
+        {
+          "text": "the",
+          "start": 123.09,
+          "end": 123.19
+        },
+        {
+          "text": "questions",
+          "start": 123.19,
+          "end": 123.76
+        },
+        {
+          "text": "you",
+          "start": 123.9,
+          "end": 124.06
+        },
+        {
+          "text": "like",
+          "start": 124.06,
+          "end": 124.33
+        },
+        {
+          "text": "that",
+          "start": 124.62,
+          "end": 124.8
+        },
+        {
+          "text": "today.",
+          "start": 124.88,
+          "end": 125.46
+        }
+      ],
+      "speaker": 2
+    },
+    {
+      "words": [
+        {
+          "text": "Thank",
+          "start": 125.71,
+          "end": 125.97
+        },
+        {
+          "text": "you",
+          "start": 125.97,
+          "end": 126.09
+        },
+        {
+          "text": "all",
+          "start": 126.08,
+          "end": 126.22
+        },
+        {
+          "text": "very",
+          "start": 126.52,
+          "end": 126.85
+        },
+        {
+          "text": "much.",
+          "start": 126.85,
+          "end": 126.99
+        },
+        {
+          "text": "Thank",
+          "start": 127.18,
+          "end": 127.48
+        },
+        {
+          "text": "you",
+          "start": 127.48,
+          "end": 127.6
+        },
+        {
+          "text": "all.",
+          "start": 127.6,
+          "end": 128.01
+        },
+        {
+          "text": "Thank",
+          "start": 128.16,
+          "end": 128.43
+        },
+        {
+          "text": "you",
+          "start": 128.43,
+          "end": 128.72
+        },
+        {
+          "text": "all.",
+          "start": 128.72,
+          "end": 128.77
+        },
+        {
+          "text": "Thank",
+          "start": 131.31,
+          "end": 131.61
+        },
+        {
+          "text": "you",
+          "start": 131.61,
+          "end": 131.75
+        },
+        {
+          "text": "all",
+          "start": 131.75,
+          "end": 132.13
+        },
+        {
+          "text": "very",
+          "start": 132.27,
+          "end": 132.56
+        },
+        {
+          "text": "much",
+          "start": 132.56,
+          "end": 132.94
+        },
+        {
+          "text": "for",
+          "start": 133.03,
+          "end": 133.13
+        },
+        {
+          "text": "coming",
+          "start": 133.16,
+          "end": 133.44
+        },
+        {
+          "text": "today.",
+          "start": 133.44,
+          "end": 133.78
+        },
+        {
+          "text": "The",
+          "start": 134.17,
+          "end": 136.1
+        }
+      ],
+      "speaker": 3
+    },
+    {
+      "words": [],
+      "speaker": 4
+    }
+  ]
+}
