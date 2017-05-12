@@ -43,7 +43,7 @@ class Transcript extends TranscriptRecord {
   }
 
   static fromMediaTagger(json) {
-    MediaTaggerAdapter.parse(json);
+    return MediaTaggerAdapter.parse(json);
   }
 
   static fromKaldi(transcriptJson, segmentsJson) {
