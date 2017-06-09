@@ -6,7 +6,7 @@ import TranscriptWord from '../TranscriptWord';
 import Transcript from '../Transcript';
 
 class KaldiAdapter {
-  static fromKaldi(transcriptJson, segmentsJson) {
+  static parse(transcriptJson, segmentsJson) {
     // Create a map of Kaldi speaker IDs to numeric speaker IDs, e.g. S0: 0, S4: 1, ...
     const speakerIdMap = {};
 
