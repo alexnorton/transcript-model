@@ -14,7 +14,7 @@ $ npm install --save transcript-model
 
 Then
 
-```
+```js
 const { Transcript } = require("transcript-model");
 
 // Define some transcript JSON
