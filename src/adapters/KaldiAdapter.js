@@ -32,7 +32,7 @@ class KaldiAdapter {
               )
               .map(w =>
                 new TranscriptWord({
-                  text: w.word,
+                  text: w.punct,
                   start: w.start,
                   end: w.end,
                 })
