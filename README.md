@@ -42,7 +42,7 @@ const json = {
 }
 
 // Instantiate a Transcript object
-const transcript = Transcript.fromJSON(json);
+const transcript = Transcript.fromJson(json);
 
 // Do something with it
 console.log(
@@ -55,7 +55,7 @@ console.log(
 );
 
 // Serialise as JSON
-console.log(transcript.toJSON());
+console.log(transcript.toJson());
 ```
 
 Try it out on [RunKit](https://runkit.com/alexnorton/runkit-npm-transcript-model).
