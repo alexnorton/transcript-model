@@ -2,7 +2,7 @@
 
 /* eslint-disable no-console */
 
-const { Transcript } = require('../lib/bundle');
+const { Transcript } = require('../lib');
 const fs = require('fs');
 
 const [mode, ...inputs] = process.argv.slice(2);

@@ -3,7 +3,7 @@ import TranscriptSegment from './TranscriptSegment';
 import TranscriptWord from './TranscriptWord';
 import Speaker from './Speaker';
 
-export default {
+export {
   Transcript,
   TranscriptSegment,
   TranscriptWord,
