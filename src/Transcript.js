@@ -18,23 +18,21 @@ class Transcript extends TranscriptRecord {
   static fromJSON(json) {
     this.validateJSON(json);
 
-    const speakers = new Immutable.List(json.speakers.map(speaker =>
-      new Speaker(speaker)
-    ));
+    const speakers = new Immutable.List(json.speakers.map(speaker => new Speaker(speaker)));
 
-    const segments = new Immutable.List(
-      json.segments.map(({ speaker, words }) => new TranscriptSegment({
+    const segments = new Immutable.List(json.segments.map(({ speaker, words }) =>
+      new TranscriptSegment({
         speaker,
-        words: new Immutable.List(
-          words.map(({ start, end, text, guid }) => new TranscriptWord({
+        words: new Immutable.List(words.map(({
+          start, end, text, guid,
+        }) =>
+          new TranscriptWord({
             start,
             end,
             text,
             id: guid,
-          }))
-        ),
-      }))
-    );
+          }))),
+      })));
 
     return new Transcript({
       speakers,
@@ -62,17 +60,19 @@ class Transcript extends TranscriptRecord {
   slice(start = 0, end) {
     const segments = this.segments
       .filter(segment => segment.getEnd() > start && (segment.getStart() < end || !end))
-      .map(segment => new TranscriptSegment({
-        speaker: segment.speaker,
-        words: segment.words
-          .filter(word => word.end > start && (word.start < end || !end))
-          .map(word => new TranscriptWord({
-            start: (word.start - start) >= 0 ? word.start - start : 0,
-            end: word.end - start,
-            id: word.id,
-            text: word.text,
-          })),
-      }));
+      .map(segment =>
+        new TranscriptSegment({
+          speaker: segment.speaker,
+          words: segment.words.filter(word =>
+            word.end > start && (word.start < end || !end))
+            .map(word =>
+              new TranscriptWord({
+                start: word.start - start >= 0 ? word.start - start : 0,
+                end: word.end - start,
+                id: word.id,
+                text: word.text,
+              })),
+        }));
 
     return new Transcript({ speakers: this.speakers, segments });
   }

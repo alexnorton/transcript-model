@@ -10,29 +10,26 @@ class MediaTaggerAdapter {
     const speakerIdMap = {};
     const speakers = [];
 
-    const segments = new Immutable.List(
-      json.commaSegments.segmentation.segments
-        .map((s, i) => Object.assign({}, s, { index: i }))
-        .filter((s, i) => json.commaSegments.segments.transcriptions[i].words.length > 0)
-        .map((s) => {
-          if (!speakerIdMap[s.speaker['@id']]) {
-            speakerIdMap[s.speaker['@id']] = speakers.push(new Speaker({ name: null })) - 1;
-          }
+    const { commaSegments } = json;
 
-          return new TranscriptSegment({
-            speaker: speakerIdMap[s.speaker['@id']],
-            words: new Immutable.List(
-              json.commaSegments.segments.transcriptions[s.index].words.map(w =>
-                new TranscriptWord({
-                  text: w.punct,
-                  start: w.start,
-                  end: w.end,
-                })
-              )
-            ),
-          });
-        })
-    );
+    const segments = new Immutable.List(commaSegments.segmentation.segments
+      .map((s, i) => Object.assign({}, s, { index: i }))
+      .filter((s, i) => commaSegments.segments.transcriptions[i].words.length > 0)
+      .map((s) => {
+        if (!speakerIdMap[s.speaker['@id']]) {
+          speakerIdMap[s.speaker['@id']] = speakers.push(new Speaker({ name: null })) - 1;
+        }
+
+        return new TranscriptSegment({
+          speaker: speakerIdMap[s.speaker['@id']],
+          words: new Immutable.List(commaSegments.segments.transcriptions[s.index].words.map(w =>
+            new TranscriptWord({
+              text: w.punct,
+              start: w.start,
+              end: w.end,
+            }))),
+        });
+      }));
 
     return new Transcript({ speakers: new Immutable.List(speakers), segments });
   }

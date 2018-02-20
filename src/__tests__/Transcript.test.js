@@ -9,25 +9,19 @@ import Speaker from '../Speaker';
 
 describe('validateJSON', () => {
   it('correctly validates valid transcripts', () => {
-    const validTranscript = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/valid-transcript.json'), 'utf8'
-    ));
+    const validTranscript = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/valid-transcript.json'), 'utf8'));
 
     expect(Transcript.validateJSON(validTranscript)).toBe(true);
   });
 
   it('correctly validates valid transcripts with GUIDs', () => {
-    const validTranscript = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'
-    ));
+    const validTranscript = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'));
 
     expect(Transcript.validateJSON(validTranscript)).toBe(true);
   });
 
   it('correctly validates invalid transcript', () => {
-    const invalidTranscript = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/invalid-transcript.json'), 'utf8'
-    ));
+    const invalidTranscript = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/invalid-transcript.json'), 'utf8'));
 
     expect(() => Transcript.validateJSON(invalidTranscript)).toThrow();
   });
@@ -35,9 +29,7 @@ describe('validateJSON', () => {
 
 describe('fromJSON', () => {
   it('creates an instance from JSON', () => {
-    const transcriptJSON = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'
-    ));
+    const transcriptJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'));
 
     const transcript = Transcript.fromJSON(transcriptJSON);
 
@@ -45,15 +37,15 @@ describe('fromJSON', () => {
 
     expect(transcript.get('speakers').size).toBe(2);
     expect(transcript.get('speakers').get(0) instanceof Speaker).toBe(true);
-    expect(transcript.get('speakers').toJS()).toEqual([
-      { name: 'Barack Obama' },
-      { name: null },
-    ]);
+    expect(transcript.get('speakers').toJS()).toEqual([{ name: 'Barack Obama' }, { name: null }]);
 
     expect(transcript.get('segments').size).toBe(2);
     expect(transcript.get('segments').get(1) instanceof TranscriptSegment).toBe(true);
 
-    expect(transcript.get('segments').get(1).toJS()).toEqual({
+    expect(transcript
+      .get('segments')
+      .get(1)
+      .toJS()).toEqual({
       speaker: 1,
       words: [
         {
@@ -71,17 +63,19 @@ describe('fromJSON', () => {
       ],
     });
 
-    const word = transcript.get('segments').get(1).get('words').get(0);
+    const word = transcript
+      .get('segments')
+      .get(1)
+      .get('words')
+      .get(0);
+
     expect(word instanceof TranscriptWord).toBe(true);
   });
 });
 
-
 describe('toJSON', () => {
   it('produces valid transcript JSON', () => {
-    const originalTranscriptJSON = JSON.parse(fs.readFileSync(
-      path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'
-    ));
+    const originalTranscriptJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'));
 
     const transcript = Transcript.fromJSON(originalTranscriptJSON);
 
