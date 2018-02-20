@@ -13,6 +13,6 @@ describe('MediaTaggerAdapter', () => {
 
     const transcript = MediaTaggerAdapter.parse(mediaTaggerResponse);
 
-    expect(transcript.toJSON()).toEqual(expectedTranscriptJson);
+    expect(transcript.toJson()).toEqual(expectedTranscriptJson);
   });
 });

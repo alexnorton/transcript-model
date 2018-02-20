@@ -11,19 +11,19 @@ describe('validateJSON', () => {
   it('correctly validates valid transcripts', () => {
     const validTranscript = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/valid-transcript.json'), 'utf8'));
 
-    expect(Transcript.validateJSON(validTranscript)).toBe(true);
+    expect(Transcript.validateJson(validTranscript)).toBe(true);
   });
 
   it('correctly validates valid transcripts with GUIDs', () => {
     const validTranscript = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'));
 
-    expect(Transcript.validateJSON(validTranscript)).toBe(true);
+    expect(Transcript.validateJson(validTranscript)).toBe(true);
   });
 
   it('correctly validates invalid transcript', () => {
     const invalidTranscript = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/invalid-transcript.json'), 'utf8'));
 
-    expect(() => Transcript.validateJSON(invalidTranscript)).toThrow();
+    expect(() => Transcript.validateJson(invalidTranscript)).toThrow();
   });
 });
 
@@ -31,7 +31,7 @@ describe('fromJSON', () => {
   it('creates an instance from JSON', () => {
     const transcriptJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'));
 
-    const transcript = Transcript.fromJSON(transcriptJSON);
+    const transcript = Transcript.fromJson(transcriptJSON);
 
     expect(transcript instanceof Transcript).toBe(true);
 
@@ -73,14 +73,14 @@ describe('fromJSON', () => {
   });
 });
 
-describe('toJSON', () => {
+describe('toJson', () => {
   it('produces valid transcript JSON', () => {
     const originalTranscriptJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '/fixtures/valid-transcript-with-guids.json'), 'utf8'));
 
-    const transcript = Transcript.fromJSON(originalTranscriptJSON);
+    const transcript = Transcript.fromJson(originalTranscriptJSON);
 
-    const transcriptJSON = transcript.toJSON();
+    const transcriptJSON = transcript.toJson();
 
-    expect(Transcript.validateJSON(transcriptJSON)).toBe(true);
+    expect(Transcript.validateJson(transcriptJSON)).toBe(true);
   });
 });

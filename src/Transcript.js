@@ -15,8 +15,8 @@ const TranscriptRecord = new Immutable.Record({
 });
 
 class Transcript extends TranscriptRecord {
-  static fromJSON(json) {
-    this.validateJSON(json);
+  static fromJson(json) {
+    this.validateJson(json);
 
     const speakers = new Immutable.List(json.speakers.map(speaker => new Speaker(speaker)));
 
@@ -48,7 +48,7 @@ class Transcript extends TranscriptRecord {
     return KaldiAdapter.parse(transcriptJson, segmentsJson);
   }
 
-  static validateJSON(json) {
+  static validateJson(json) {
     const ajv = new Ajv();
     const valid = ajv.validate(schema, json);
     if (!valid) {
@@ -77,7 +77,7 @@ class Transcript extends TranscriptRecord {
     return new Transcript({ speakers: this.speakers, segments });
   }
 
-  toJSON() {
+  toJson() {
     return {
       speakers: this.speakers.toArray().map(speaker => ({
         name: speaker.name,
