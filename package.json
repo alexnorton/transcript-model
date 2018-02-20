@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/bbc/transcript-model#readme",
   "dependencies": {
-    "ajv": "^5.0.1-beta",
-    "immutable": "^3.8.1"
+    "ajv": "^6.1.1",
+    "immutable": "^3.8.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
