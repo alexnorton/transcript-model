@@ -7,32 +7,36 @@ import Transcript from '../Transcript';
 
 class KaldiAdapter {
   static parse(transcriptJson, segmentsJson) {
-    // Create a map of Kaldi speaker IDs to numeric speaker IDs, e.g. S0: 0, S4: 1, ...
     const speakerIdMap = {};
+    const speakers = [];
 
-    const speakers = new Immutable.List(segmentsJson.speakers.map((s, i) => {
-      speakerIdMap[s['@id']] = i;
+    const segments = new Immutable.List(segmentsJson.segments.reduce((list, segment) => {
+      const words = transcriptJson.words.filter(({ start }) =>
+        start >= segment.start && start <= segment.start + segment.duration);
 
-      // Comma doesn't give us speaker names so we just create a new "empty" Speaker
-      return new Speaker({
-        name: null,
-      });
-    }));
+      if (words.length === 0) {
+        return list;
+      }
 
-    const segments = new Immutable.List(segmentsJson.segments.map(s =>
-      new TranscriptSegment({
-        speaker: speakerIdMap[s.speaker['@id']],
-        words: new Immutable.List(transcriptJson.words
-          .filter(({ start, end }) => start >= s.start && end <= s.start + s.duration)
-          .map(w =>
+      if (!speakerIdMap[segment.speaker['@id']]) {
+        speakerIdMap[segment.speaker['@id']] = speakers.push(new Speaker({ name: null })) - 1;
+      }
+
+      return [
+        ...list,
+        new TranscriptSegment({
+          speaker: speakerIdMap[segment.speaker['@id']],
+          words: new Immutable.List(words.map(w =>
             new TranscriptWord({
               text: w.punct,
               start: w.start,
               end: w.end,
             }))),
-      })));
+        }),
+      ];
+    }, []));
 
-    return new Transcript({ speakers, segments });
+    return new Transcript({ speakers: new Immutable.List(speakers), segments });
   }
 }
 
