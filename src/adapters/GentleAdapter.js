@@ -44,7 +44,7 @@ export const getComponents = (text, delimeter) => {
 
 export const getSegments = text => getComponents(text, /[\r\n]+/igm);
 
-export const getWords = text => getComponents(text, /[ ]+/igm);
+export const getWords = text => getComponents(text, /[ -]+/igm);
 
 export const stripPunctuation = word => word.replace(/[^\w]/g, '');
 
