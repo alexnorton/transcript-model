@@ -258,19 +258,127 @@ describe('interpolateSegmentWordTimings', () => {
   });
 
   it('interpolates single missing words at the start of segments correctly', () => {
+    const segmentWords = [
+      { text: '"We' },
+      { text: 'absolutely', startTime: 77.28, endTime: 77.93 },
+      { text: 'wanted', startTime: 77.93, endTime: 77.98 },
+      { text: 'to', startTime: 78.26, endTime: 78.37 },
+      { text: 'be', startTime: 78.39, endTime: 78.6 },
+      { text: 'here",', startTime: 78.65, endTime: 78.81 },
+      { text: 'said', startTime: 78.81, endTime: 79.02 },
+    ];
 
+    const wordDurationEquation = { intercept: 0.06, gradient: 0.06 };
+
+    const interpolatedSegmentWords = interpolateSegmentWordTimings(
+      segmentWords,
+      wordDurationEquation,
+    );
+
+    const expectedSegmentWords = [
+      { text: '"We', startTime: 77.1, endTime: 77.28 },
+      { text: 'absolutely', startTime: 77.28, endTime: 77.93 },
+      { text: 'wanted', startTime: 77.93, endTime: 77.98 },
+      { text: 'to', startTime: 78.26, endTime: 78.37 },
+      { text: 'be', startTime: 78.39, endTime: 78.6 },
+      { text: 'here",', startTime: 78.65, endTime: 78.81 },
+      { text: 'said', startTime: 78.81, endTime: 79.02 },
+    ];
+
+    expect(interpolatedSegmentWords).toEqual(expectedSegmentWords);
   });
 
   it('interpolates multiple missing words at the start of segments correctly', () => {
+    const segmentWords = [
+      { text: '"We' },
+      { text: 'absolutely' },
+      { text: 'wanted' },
+      { text: 'to', startTime: 78.26, endTime: 78.37 },
+      { text: 'be', startTime: 78.39, endTime: 78.6 },
+      { text: 'here",', startTime: 78.65, endTime: 78.81 },
+      { text: 'said', startTime: 78.81, endTime: 79.02 },
+    ];
 
+    const wordDurationEquation = { intercept: 0.06, gradient: 0.06 };
+
+    const interpolatedSegmentWords = interpolateSegmentWordTimings(
+      segmentWords,
+      wordDurationEquation,
+    );
+
+    const expectedSegmentWords = [
+      { text: '"We', startTime: 77, endTime: 77.18 },
+      { text: 'absolutely', startTime: 77.18, endTime: 77.84 },
+      { text: 'wanted', startTime: 77.84, endTime: 78.26 },
+      { text: 'to', startTime: 78.26, endTime: 78.37 },
+      { text: 'be', startTime: 78.39, endTime: 78.6 },
+      { text: 'here",', startTime: 78.65, endTime: 78.81 },
+      { text: 'said', startTime: 78.81, endTime: 79.02 },
+    ];
+
+    expect(interpolatedSegmentWords).toEqual(expectedSegmentWords);
   });
 
   it('interpolates single missing words at the end of segments correctly', () => {
+    const segmentWords = [
+      { text: '"We', startTime: 77.11, endTime: 77.28 },
+      { text: 'absolutely', startTime: 77.28, endTime: 77.93 },
+      { text: 'wanted', startTime: 77.93, endTime: 77.98 },
+      { text: 'to', startTime: 78.26, endTime: 78.37 },
+      { text: 'be', startTime: 78.39, endTime: 78.6 },
+      { text: 'here",', startTime: 78.65, endTime: 78.81 },
+      { text: 'said' },
+    ];
 
+    const wordDurationEquation = { intercept: 0.06, gradient: 0.06 };
+
+    const interpolatedSegmentWords = interpolateSegmentWordTimings(
+      segmentWords,
+      wordDurationEquation,
+    );
+
+    const expectedSegmentWords = [
+      { text: '"We', startTime: 77.11, endTime: 77.28 },
+      { text: 'absolutely', startTime: 77.28, endTime: 77.93 },
+      { text: 'wanted', startTime: 77.93, endTime: 77.98 },
+      { text: 'to', startTime: 78.26, endTime: 78.37 },
+      { text: 'be', startTime: 78.39, endTime: 78.6 },
+      { text: 'here",', startTime: 78.65, endTime: 78.81 },
+      { text: 'said', startTime: 78.81, endTime: 79.11 },
+    ];
+
+    expect(interpolatedSegmentWords).toEqual(expectedSegmentWords);
   });
 
   it('interpolates multiple missing words at the end of segments correctly', () => {
+    const segmentWords = [
+      { text: '"We', startTime: 77.11, endTime: 77.28 },
+      { text: 'absolutely', startTime: 77.28, endTime: 77.93 },
+      { text: 'wanted', startTime: 77.93, endTime: 77.98 },
+      { text: 'to', startTime: 78.26, endTime: 78.37 },
+      { text: 'be' },
+      { text: 'here",' },
+      { text: 'said' },
+    ];
 
+    const wordDurationEquation = { intercept: 0.06, gradient: 0.06 };
+
+    const interpolatedSegmentWords = interpolateSegmentWordTimings(
+      segmentWords,
+      wordDurationEquation,
+    );
+
+    const expectedSegmentWords = [
+      { text: '"We', startTime: 77.11, endTime: 77.28 },
+      { text: 'absolutely', startTime: 77.28, endTime: 77.93 },
+      { text: 'wanted', startTime: 77.93, endTime: 77.98 },
+      { text: 'to', startTime: 78.26, endTime: 78.37 },
+      { text: 'be', startTime: 78.37, endTime: 78.55000000000001 },
+      { text: 'here",', startTime: 78.55000000000001, endTime: 78.85000000000001 },
+      { text: 'said', startTime: 78.85000000000001, endTime: 79.15 },
+    ];
+
+    expect(interpolatedSegmentWords).toEqual(expectedSegmentWords);
   });
 
   it('handles segments with no timed words correctly', () => {

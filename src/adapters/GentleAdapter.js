@@ -89,16 +89,7 @@ export const interpolateSegmentWordTimings = (segmentWords, wordDurationEquation
       if (interpolatedSegmentWords.length === 0 && !segmentWords[i]) {
         // segment has no timed words
         interpolatedUntimedWords = untimedWords;
-      } else if (interpolatedSegmentWords.length === 0) {
-        // untimed words are at beginning of segment
-      } else if (!segmentWords[i]) {
-        // untimed words are at end of segment
       } else {
-        // untimed words are in the middle of segment
-        const untimedStart = interpolatedSegmentWords[interpolatedSegmentWords.length - 1].endTime;
-        const untimedEnd = segmentWords[i].startTime;
-        const untimedDuration = untimedEnd - untimedStart;
-
         const relativeEstimatedWordTimings = untimedWords.reduce(
           (words, word) => {
             const startTime = words.reduce((total, { duration }) => total + duration, 0);
@@ -118,20 +109,48 @@ export const interpolateSegmentWordTimings = (segmentWords, wordDurationEquation
           0,
         );
 
-        const actualToEstimatedUntimedRatio = untimedDuration / totalEstimatedDuration;
+        if (interpolatedSegmentWords.length === 0 || !segmentWords[i]) {
+          let untimedStart;
 
-        interpolatedUntimedWords = untimedWords.map((word, index) => ({
-          ...word,
-          startTime: untimedStart + (
-            relativeEstimatedWordTimings[index].startTime * actualToEstimatedUntimedRatio
-          ),
-          endTime: untimedStart + (
-            (
-              relativeEstimatedWordTimings[index].startTime
-              + relativeEstimatedWordTimings[index].duration
-            ) * actualToEstimatedUntimedRatio
-          ),
-        }));
+          if (interpolatedSegmentWords.length === 0) {
+            // untimed words are at start of segment
+            untimedStart = segmentWords[i].startTime - totalEstimatedDuration;
+          } else if (!segmentWords[i]) {
+            // untimed words are at end of segment
+            untimedStart = interpolatedSegmentWords[interpolatedSegmentWords.length - 1].endTime;
+          }
+
+          interpolatedUntimedWords = untimedWords.map((word, index) => ({
+            ...word,
+            startTime: untimedStart
+              + relativeEstimatedWordTimings[index].startTime,
+            endTime: untimedStart
+              + relativeEstimatedWordTimings[index].startTime
+              + relativeEstimatedWordTimings[index].duration,
+          }));
+        } else {
+          // untimed words are in the middle of segment
+          const untimedStart = interpolatedSegmentWords[
+            interpolatedSegmentWords.length - 1
+          ].endTime;
+          const untimedEnd = segmentWords[i].startTime;
+          const untimedDuration = untimedEnd - untimedStart;
+
+          const actualToEstimatedUntimedRatio = untimedDuration / totalEstimatedDuration;
+
+          interpolatedUntimedWords = untimedWords.map((word, index) => ({
+            ...word,
+            startTime: untimedStart + (
+              relativeEstimatedWordTimings[index].startTime * actualToEstimatedUntimedRatio
+            ),
+            endTime: untimedStart + (
+              (
+                relativeEstimatedWordTimings[index].startTime
+                + relativeEstimatedWordTimings[index].duration
+              ) * actualToEstimatedUntimedRatio
+            ),
+          }));
+        }
       }
 
       interpolatedSegmentWords.push(...interpolatedUntimedWords);
