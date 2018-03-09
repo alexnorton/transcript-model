@@ -7,6 +7,7 @@ import Speaker from './Speaker';
 import KaldiAdapter from './adapters/KaldiAdapter';
 import MediaTaggerAdapter from './adapters/MediaTaggerAdapter';
 import OctoAdapter from './adapters/OctoAdapter';
+import GentleAdapter from './adapters/GentleAdapter';
 
 import schema from '../schema.json';
 
@@ -51,6 +52,10 @@ class Transcript extends TranscriptRecord {
 
   static fromOcto(json) {
     return OctoAdapter.parse(json);
+  }
+
+  static fromGentle(json) {
+    return GentleAdapter.parse(json);
   }
 
   static validateJson(json) {
