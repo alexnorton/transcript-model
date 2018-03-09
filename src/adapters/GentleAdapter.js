@@ -48,23 +48,21 @@ export const stripPunctuation = word => word.replace(/[^\w]/g, '');
 
 export const getWordDurationEquation = (gentleWords) => {
   const sum = [0, 0, 0, 0, 0];
-  let len = 0;
 
-  for (let n = 0; n < gentleWords.length; n += 1) {
-    len += 1;
-    const wordLength = stripPunctuation(gentleWords[n].word).length;
-    const wordDuration = gentleWords[n].end - gentleWords[n].start;
+  gentleWords.forEach((word) => {
+    const wordLength = stripPunctuation(word.word).length;
+    const wordDuration = word.end - word.start;
     sum[0] += wordLength;
     sum[1] += wordDuration;
     sum[2] += wordLength * wordLength;
     sum[3] += wordLength * wordDuration;
     sum[4] += wordDuration * wordDuration;
-  }
+  });
 
-  const run = ((len * sum[2]) - (sum[0] * sum[0]));
-  const rise = ((len * sum[3]) - (sum[0] * sum[1]));
+  const run = ((gentleWords.length * sum[2]) - (sum[0] * sum[0]));
+  const rise = ((gentleWords.length * sum[3]) - (sum[0] * sum[1]));
   const gradient = run === 0 ? 0 : rise / run;
-  const intercept = (sum[1] / len) - ((gradient * sum[0]) / len);
+  const intercept = (sum[1] / gentleWords.length) - ((gradient * sum[0]) / gentleWords.length);
 
   return { gradient, intercept };
 };
