@@ -413,8 +413,8 @@ describe('getWordDurationEquation', () => {
   it('calculates word duration equation coefficients correctly', () => {
     const { intercept, gradient } = getWordDurationEquation(gentle.words);
 
-    expect(intercept).toBe(0.05881439900368246);
-    expect(gradient).toBe(0.059645153019175265);
+    expect(intercept).toBe(0.05564764212068429);
+    expect(gradient).toBe(0.060176066257253684);
   });
 });
 
@@ -431,6 +431,8 @@ describe('getEstimatedWordDuration', () => {
 describe('transcriptFromGentle', () => {
   it('should return a Transcript correctly', () => {
     const transcript = transcriptFromGentle(gentle);
+
+    expect(transcript.segments.length).toBe(7);
 
     transcript.segments.forEach((segment) => {
       segment.words.forEach((word) => {

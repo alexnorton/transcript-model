@@ -187,14 +187,17 @@ export default (gentle) => {
     new Speaker(),
   ];
 
-  const transcriptSegments = segmentsWithInterpolatedWords.map(segment => new TranscriptSegment({
-    speaker: 0,
-    words: segment.words.map(word => new TranscriptWord({
-      start: word.startTime,
-      end: word.endTime,
-      text: word.text,
-    })),
-  }));
+  const transcriptSegments = segmentsWithInterpolatedWords
+    // discard any segments without any timings
+    .filter(segment => segment.words[0].startTime)
+    .map(segment => new TranscriptSegment({
+      speaker: 0,
+      words: segment.words.map(word => new TranscriptWord({
+        start: word.startTime,
+        end: word.endTime,
+        text: word.text,
+      })),
+    }));
 
   return new Transcript({
     speakers,
