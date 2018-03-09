@@ -428,7 +428,7 @@ describe('getEstimatedWordDuration', () => {
   });
 });
 
-xdescribe('transcriptFromGentle', () => {
+describe('transcriptFromGentle', () => {
   it('should return a Transcript correctly', () => {
     const transcript = transcriptFromGentle(gentle);
 

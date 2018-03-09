@@ -178,11 +178,16 @@ export default (gentle) => {
     word.endTime = gentleWord.end;
   });
 
+  const wordDurationEquation = getWordDurationEquation(gentle.words);
+
+  const segmentsWithInterpolatedWords = segments.map(segment =>
+    ({ ...segment, words: interpolateSegmentWordTimings(segment.words, wordDurationEquation) }));
+
   const speakers = [
     new Speaker(),
   ];
 
-  const transcriptSegments = segments.map(segment => new TranscriptSegment({
+  const transcriptSegments = segmentsWithInterpolatedWords.map(segment => new TranscriptSegment({
     speaker: 0,
     words: segment.words.map(word => new TranscriptWord({
       start: word.startTime,
