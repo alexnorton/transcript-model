@@ -44,7 +44,108 @@ export const getSegments = text => getComponents(text, /[\r\n]+/igm);
 
 export const getWords = text => getComponents(text, /[ ]+/igm);
 
-export const transcriptFromGentle = (gentle) => {
+export const stripPunctuation = word => word.replace(/[^\w]/g, '');
+
+export const getWordDurationEquation = (gentleWords) => {
+  const sum = [0, 0, 0, 0, 0];
+  let len = 0;
+
+  for (let n = 0; n < gentleWords.length; n += 1) {
+    len += 1;
+    const wordLength = stripPunctuation(gentleWords[n].word).length;
+    const wordDuration = gentleWords[n].end - gentleWords[n].start;
+    sum[0] += wordLength;
+    sum[1] += wordDuration;
+    sum[2] += wordLength * wordLength;
+    sum[3] += wordLength * wordDuration;
+    sum[4] += wordDuration * wordDuration;
+  }
+
+  const run = ((len * sum[2]) - (sum[0] * sum[0]));
+  const rise = ((len * sum[3]) - (sum[0] * sum[1]));
+  const gradient = run === 0 ? 0 : rise / run;
+  const intercept = (sum[1] / len) - ((gradient * sum[0]) / len);
+
+  return { gradient, intercept };
+};
+
+export const getEstimatedWordDuration = (length, { gradient, intercept }) =>
+  intercept + (length * gradient);
+
+export const interpolateSegmentWordTimings = (segmentWords, wordDurationEquation) => {
+  const interpolatedSegmentWords = [];
+
+  for (let i = 0; i < segmentWords.length; i += 1) {
+    if (!segmentWords[i].startTime) {
+      const untimedWords = [];
+
+      while (segmentWords[i] && !segmentWords[i].startTime) {
+        untimedWords.push(segmentWords[i]);
+        i += 1;
+      }
+
+      let interpolatedUntimedWords;
+
+      if (interpolatedSegmentWords.length === 0 && !segmentWords[i]) {
+        // segment has no timed words
+        interpolatedUntimedWords = untimedWords;
+      } else if (interpolatedSegmentWords.length === 0) {
+        // untimed words are at beginning of segment
+      } else if (!segmentWords[i]) {
+        // untimed words are at end of segment
+      } else {
+        // untimed words are in the middle of segment
+        const untimedStart = interpolatedSegmentWords[interpolatedSegmentWords.length - 1].endTime;
+        const untimedEnd = segmentWords[i].startTime;
+        const untimedDuration = untimedEnd - untimedStart;
+
+        const relativeEstimatedWordTimings = untimedWords.reduce(
+          (words, word) => {
+            const startTime = words.reduce((total, { duration }) => total + duration, 0);
+
+            const duration = getEstimatedWordDuration(
+              stripPunctuation(word.text).length,
+              wordDurationEquation,
+            );
+
+            return [...words, { startTime, duration }];
+          },
+          [],
+        );
+
+        const totalEstimatedDuration = relativeEstimatedWordTimings.reduce(
+          (total, { duration }) => total + duration,
+          0,
+        );
+
+        const actualToEstimatedUntimedRatio = untimedDuration / totalEstimatedDuration;
+
+        interpolatedUntimedWords = untimedWords.map((word, index) => ({
+          ...word,
+          startTime: untimedStart + (
+            relativeEstimatedWordTimings[index].startTime * actualToEstimatedUntimedRatio
+          ),
+          endTime: untimedStart + (
+            (
+              relativeEstimatedWordTimings[index].startTime
+              + relativeEstimatedWordTimings[index].duration
+            ) * actualToEstimatedUntimedRatio
+          ),
+        }));
+      }
+
+      interpolatedSegmentWords.push(...interpolatedUntimedWords);
+    }
+
+    if (segmentWords[i]) {
+      interpolatedSegmentWords.push(segmentWords[i]);
+    }
+  }
+
+  return interpolatedSegmentWords;
+};
+
+export default (gentle) => {
   const segments = getSegments(gentle.transcript).map(segment =>
     ({ ...segment, words: getWords(segment.text) }));
 
