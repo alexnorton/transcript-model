@@ -8,67 +8,34 @@ const fs = require('fs');
 const [mode, ...inputs] = process.argv.slice(2);
 
 if (mode === '--kaldi' && inputs.length === 2) {
-  let transcriptFile;
-  let segmentsFile;
+  const transcriptFile = fs.readFileSync(inputs[0]);
+  const segmentsFile = fs.readFileSync(inputs[1]);
 
-  try {
-    transcriptFile = fs.readFileSync(inputs[0]);
-    segmentsFile = fs.readFileSync(inputs[1]);
-  } catch (error) {
-    console.error('Error reading file:\n', error.message);
-    process.exit(1);
-  }
+  const transcriptJSON = JSON.parse(transcriptFile);
+  const segmentsJSON = JSON.parse(segmentsFile);
 
-  let transcriptJSON;
-  let segmentsJSON;
-
-  try {
-    transcriptJSON = JSON.parse(transcriptFile);
-    segmentsJSON = JSON.parse(segmentsFile);
-  } catch (error) {
-    console.error('Error parsing JSON:\n', error.message);
-    process.exit(1);
-  }
-
-  let transcript;
-
-  try {
-    transcript = Transcript.fromKaldi(transcriptJSON, segmentsJSON);
-  } catch (error) {
-    console.error('Error creating transcript:\n', error.message);
-  }
+  const transcript = Transcript.fromKaldi(transcriptJSON, segmentsJSON);
 
   console.log(JSON.stringify(transcript.toJson(), null, 2));
 } else if (mode === '--octo' && inputs.length === 1) {
-  let inputFile;
+  const inputFile = fs.readFileSync(inputs[0]);
 
-  try {
-    inputFile = fs.readFileSync(inputs[0]);
-  } catch (error) {
-    console.error('Error reading file:\n', error.message);
-    process.exit(1);
-  }
+  const inputJson = JSON.parse(inputFile);
 
-  let inputJson;
+  const transcript = Transcript.fromOcto(inputJson);
 
-  try {
-    inputJson = JSON.parse(inputFile);
-  } catch (error) {
-    console.error('Error parsing JSON:\n', error.message);
-    process.exit(1);
-  }
+  console.log(JSON.stringify(transcript.toJson(), null, 2));
+} else if (mode === '--gentle' && inputs.length === 1) {
+  const inputFile = fs.readFileSync(inputs[0]);
 
-  let transcript;
+  const inputJson = JSON.parse(inputFile);
 
-  try {
-    transcript = Transcript.fromOcto(inputJson);
-  } catch (error) {
-    console.error('Error creating transcript:\n', error.message);
-  }
+  const transcript = Transcript.fromGentle(inputJson);
 
   console.log(JSON.stringify(transcript.toJson(), null, 2));
 } else {
   console.log('Usage:');
   console.log('  transcript-model --kaldi path/to/transcript.json path/to/segments.json');
   console.log('  transcript-model --octo path/to/input.json');
+  console.log('  transcript-model --gentle path/to/input.json');
 }
