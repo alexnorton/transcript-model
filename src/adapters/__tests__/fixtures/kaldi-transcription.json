@@ -1,0 +1,1712 @@
+{
+  "metadata": {
+    "version": "0.0.8"
+  },
+  "text":
+    "right then are you off or i'll be o.k. thank you very much can i just say this first of all thank you all for coming here today we just concluded a meeting a joint meeting of the shadow cabinet and the national executive and discuss a manifesto for the general election we just unanimously agreed the contents of it we've mended draft document was put forward in the most informed interesting sensible discussion and debate in a party and will present his manifesto british people in the next few days will be an offer we believe the policies in it are very popular an offer that will transform the lives of many people in our society and ensure we have a government in britain on june the eighth that will work for the many not the few give everyone in our society a decent opportunity and a decent chance so nobody's ignored nobody's forgotten and nobody is left behind the details will be published in the next few days the details will be set out to you including the costings of all the pledges promises we make and i know you're all looking forward to reading it in great detail at that time at that point there at that point you'll be able to ask all the questions you like that today thank you all very much thank you all thank you all thank you all very much for coming today the",
+  "punct":
+    "Right, then. Are you off or I'll be o.k. Thank you very much. Can I just say this first of all. Thank you all for coming here today. We just concluded a meeting a joint meeting of the shadow cabinet and the National Executive and discuss a manifesto for the general election. We just unanimously agreed the contents of it. We've mended. Draft document was put forward in the most informed. Interesting sensible discussion and debate in a party and will present his manifesto. British people in the next few days will be an offer. We believe the policies in it are very popular an offer that will transform the lives of many people in our society and ensure we have a government in Britain. On June, the eighth. That will work for the many. Not the few. Give everyone in our society, a decent opportunity and a decent chance. So nobody's ignored, nobody's forgotten. And nobody is left behind the details will be published in the next few days, the details will be set out to you, including the costings of all the pledges promises we make and I know you're all looking forward to reading it in great detail at that time at that point there at that point. You'll be able to ask all the questions you like that today. Thank you all very much. Thank you all. Thank you all. Thank you all very much for coming today. The",
+  "words": [
+    {
+      "start": 13.1,
+      "confidence": 0.94,
+      "end": 13.58,
+      "word": "right",
+      "punct": "Right,"
+    },
+    {
+      "start": 13.62,
+      "confidence": 0.42,
+      "end": 13.91,
+      "word": "then",
+      "punct": "then."
+    },
+    {
+      "start": 14.09,
+      "confidence": 0.52,
+      "end": 14.72,
+      "word": "are",
+      "punct": "Are"
+    },
+    {
+      "start": 15.04,
+      "confidence": 0.64,
+      "end": 15.33,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 15.34,
+      "confidence": 0.63,
+      "end": 15.66,
+      "word": "off",
+      "punct": "off"
+    },
+    {
+      "start": 16.03,
+      "confidence": 0.51,
+      "end": 17.86,
+      "word": "or",
+      "punct": "or"
+    },
+    {
+      "start": 21.22,
+      "confidence": 0.47,
+      "end": 21.69,
+      "word": "i'll",
+      "punct": "I'll"
+    },
+    {
+      "start": 22.39,
+      "confidence": 0.43,
+      "end": 22.76,
+      "word": "be",
+      "punct": "be"
+    },
+    {
+      "start": 23.6,
+      "confidence": 0.43,
+      "end": 23.95,
+      "word": "o.k.",
+      "punct": "o.k."
+    },
+    {
+      "start": 38.16,
+      "confidence": 1,
+      "end": 38.44,
+      "word": "thank",
+      "punct": "Thank"
+    },
+    {
+      "start": 38.44,
+      "confidence": 1,
+      "end": 38.56,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 38.56,
+      "confidence": 1,
+      "end": 38.82,
+      "word": "very",
+      "punct": "very"
+    },
+    {
+      "start": 38.82,
+      "confidence": 1,
+      "end": 39.12,
+      "word": "much",
+      "punct": "much."
+    },
+    {
+      "start": 39.15,
+      "confidence": 1,
+      "end": 39.32,
+      "word": "can",
+      "punct": "Can"
+    },
+    {
+      "start": 39.32,
+      "confidence": 1,
+      "end": 39.41,
+      "word": "i",
+      "punct": "I"
+    },
+    {
+      "start": 39.41,
+      "confidence": 1,
+      "end": 39.67,
+      "word": "just",
+      "punct": "just"
+    },
+    {
+      "start": 39.67,
+      "confidence": 1,
+      "end": 39.94,
+      "word": "say",
+      "punct": "say"
+    },
+    {
+      "start": 39.95,
+      "confidence": 0.96,
+      "end": 40.39,
+      "word": "this",
+      "punct": "this"
+    },
+    {
+      "start": 40.58,
+      "confidence": 1,
+      "end": 40.91,
+      "word": "first",
+      "punct": "first"
+    },
+    {
+      "start": 40.91,
+      "confidence": 1,
+      "end": 41,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 41,
+      "confidence": 1,
+      "end": 41.31,
+      "word": "all",
+      "punct": "all."
+    },
+    {
+      "start": 41.39,
+      "confidence": 1,
+      "end": 41.7,
+      "word": "thank",
+      "punct": "Thank"
+    },
+    {
+      "start": 41.7,
+      "confidence": 1,
+      "end": 41.85,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 41.85,
+      "confidence": 1,
+      "end": 42.01,
+      "word": "all",
+      "punct": "all"
+    },
+    {
+      "start": 42.01,
+      "confidence": 1,
+      "end": 42.12,
+      "word": "for",
+      "punct": "for"
+    },
+    {
+      "start": 42.12,
+      "confidence": 1,
+      "end": 42.45,
+      "word": "coming",
+      "punct": "coming"
+    },
+    {
+      "start": 42.45,
+      "confidence": 1,
+      "end": 42.83,
+      "word": "here",
+      "punct": "here"
+    },
+    {
+      "start": 43.01,
+      "confidence": 1,
+      "end": 43.59,
+      "word": "today",
+      "punct": "today."
+    },
+    {
+      "start": 44.11,
+      "confidence": 0.72,
+      "end": 44.28,
+      "word": "we",
+      "punct": "We"
+    },
+    {
+      "start": 44.3,
+      "confidence": 1,
+      "end": 44.6,
+      "word": "just",
+      "punct": "just"
+    },
+    {
+      "start": 44.6,
+      "confidence": 0.61,
+      "end": 45.21,
+      "word": "concluded",
+      "punct": "concluded"
+    },
+    {
+      "start": 45.21,
+      "confidence": 0.74,
+      "end": 45.37,
+      "word": "a",
+      "punct": "a"
+    },
+    {
+      "start": 45.37,
+      "confidence": 0.98,
+      "end": 45.92,
+      "word": "meeting",
+      "punct": "meeting"
+    },
+    {
+      "start": 45.92,
+      "confidence": 0.91,
+      "end": 46,
+      "word": "a",
+      "punct": "a"
+    },
+    {
+      "start": 46,
+      "confidence": 0.99,
+      "end": 46.33,
+      "word": "joint",
+      "punct": "joint"
+    },
+    {
+      "start": 46.33,
+      "confidence": 0.86,
+      "end": 46.69,
+      "word": "meeting",
+      "punct": "meeting"
+    },
+    {
+      "start": 46.69,
+      "confidence": 0.99,
+      "end": 46.79,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 46.79,
+      "confidence": 1,
+      "end": 46.88,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 46.88,
+      "confidence": 1,
+      "end": 47.2,
+      "word": "shadow",
+      "punct": "shadow"
+    },
+    {
+      "start": 47.2,
+      "confidence": 1,
+      "end": 47.69,
+      "word": "cabinet",
+      "punct": "cabinet"
+    },
+    {
+      "start": 47.69,
+      "confidence": 0.62,
+      "end": 47.82,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 47.82,
+      "confidence": 0.69,
+      "end": 47.9,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 47.9,
+      "confidence": 1,
+      "end": 48.26,
+      "word": "national",
+      "punct": "National"
+    },
+    {
+      "start": 48.26,
+      "confidence": 1,
+      "end": 49.07,
+      "word": "executive",
+      "punct": "Executive"
+    },
+    {
+      "start": 49.69,
+      "confidence": 1,
+      "end": 50.21,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 50.61,
+      "confidence": 0.83,
+      "end": 51.32,
+      "word": "discuss",
+      "punct": "discuss"
+    },
+    {
+      "start": 51.69,
+      "confidence": 0.6,
+      "end": 51.88,
+      "word": "a",
+      "punct": "a"
+    },
+    {
+      "start": 51.89,
+      "confidence": 1,
+      "end": 52.6,
+      "word": "manifesto",
+      "punct": "manifesto"
+    },
+    {
+      "start": 52.6,
+      "confidence": 1,
+      "end": 52.7,
+      "word": "for",
+      "punct": "for"
+    },
+    {
+      "start": 52.7,
+      "confidence": 1,
+      "end": 52.82,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 52.82,
+      "confidence": 1,
+      "end": 53.19,
+      "word": "general",
+      "punct": "general"
+    },
+    {
+      "start": 53.19,
+      "confidence": 1,
+      "end": 53.7,
+      "word": "election",
+      "punct": "election."
+    },
+    {
+      "start": 54.04,
+      "confidence": 0.35,
+      "end": 54.15,
+      "word": "we",
+      "punct": "We"
+    },
+    {
+      "start": 54.29,
+      "confidence": 0.99,
+      "end": 54.7,
+      "word": "just",
+      "punct": "just"
+    },
+    {
+      "start": 54.79,
+      "confidence": 1,
+      "end": 55.77,
+      "word": "unanimously",
+      "punct": "unanimously"
+    },
+    {
+      "start": 55.77,
+      "confidence": 1,
+      "end": 56.36,
+      "word": "agreed",
+      "punct": "agreed"
+    },
+    {
+      "start": 56.53,
+      "confidence": 0.94,
+      "end": 56.61,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 56.63,
+      "confidence": 0.97,
+      "end": 57.25,
+      "word": "contents",
+      "punct": "contents"
+    },
+    {
+      "start": 57.28,
+      "confidence": 1,
+      "end": 57.49,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 57.49,
+      "confidence": 0.52,
+      "end": 57.76,
+      "word": "it",
+      "punct": "it."
+    },
+    {
+      "start": 58.34,
+      "confidence": 0.64,
+      "end": 58.73,
+      "word": "we've",
+      "punct": "We've"
+    },
+    {
+      "start": 59.08,
+      "confidence": 0.51,
+      "end": 59.72,
+      "word": "mended",
+      "punct": "mended."
+    },
+    {
+      "start": 59.95,
+      "confidence": 0.58,
+      "end": 60.26,
+      "word": "draft",
+      "punct": "Draft"
+    },
+    {
+      "start": 60.36,
+      "confidence": 0.93,
+      "end": 60.82,
+      "word": "document",
+      "punct": "document"
+    },
+    {
+      "start": 60.84,
+      "confidence": 1,
+      "end": 60.99,
+      "word": "was",
+      "punct": "was"
+    },
+    {
+      "start": 60.99,
+      "confidence": 1,
+      "end": 61.2,
+      "word": "put",
+      "punct": "put"
+    },
+    {
+      "start": 61.2,
+      "confidence": 1,
+      "end": 61.69,
+      "word": "forward",
+      "punct": "forward"
+    },
+    {
+      "start": 61.88,
+      "confidence": 0.91,
+      "end": 62.06,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 62.06,
+      "confidence": 0.87,
+      "end": 62.17,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 62.17,
+      "confidence": 1,
+      "end": 62.76,
+      "word": "most",
+      "punct": "most"
+    },
+    {
+      "start": 63.43,
+      "confidence": 0.88,
+      "end": 64.38,
+      "word": "informed",
+      "punct": "informed."
+    },
+    {
+      "start": 64.77,
+      "confidence": 1,
+      "end": 65.62,
+      "word": "interesting",
+      "punct": "Interesting"
+    },
+    {
+      "start": 65.91,
+      "confidence": 1,
+      "end": 66.75,
+      "word": "sensible",
+      "punct": "sensible"
+    },
+    {
+      "start": 66.88,
+      "confidence": 1,
+      "end": 67.43,
+      "word": "discussion",
+      "punct": "discussion"
+    },
+    {
+      "start": 67.43,
+      "confidence": 0.94,
+      "end": 67.51,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 67.51,
+      "confidence": 1,
+      "end": 67.84,
+      "word": "debate",
+      "punct": "debate"
+    },
+    {
+      "start": 68.45,
+      "confidence": 1,
+      "end": 68.72,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 68.75,
+      "confidence": 0.84,
+      "end": 68.91,
+      "word": "a",
+      "punct": "a"
+    },
+    {
+      "start": 68.91,
+      "confidence": 0.98,
+      "end": 69.48,
+      "word": "party",
+      "punct": "party"
+    },
+    {
+      "start": 69.94,
+      "confidence": 0.51,
+      "end": 70.2,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 70.24,
+      "confidence": 0.7,
+      "end": 70.44,
+      "word": "will",
+      "punct": "will"
+    },
+    {
+      "start": 70.43,
+      "confidence": 1,
+      "end": 70.84,
+      "word": "present",
+      "punct": "present"
+    },
+    {
+      "start": 70.85,
+      "confidence": 0.35,
+      "end": 71,
+      "word": "his",
+      "punct": "his"
+    },
+    {
+      "start": 71.02,
+      "confidence": 1,
+      "end": 71.82,
+      "word": "manifesto",
+      "punct": "manifesto."
+    },
+    {
+      "start": 72.21,
+      "confidence": 1,
+      "end": 72.56,
+      "word": "british",
+      "punct": "British"
+    },
+    {
+      "start": 72.56,
+      "confidence": 1,
+      "end": 73.08,
+      "word": "people",
+      "punct": "people"
+    },
+    {
+      "start": 73.26,
+      "confidence": 0.98,
+      "end": 73.39,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 73.39,
+      "confidence": 1,
+      "end": 73.46,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 73.46,
+      "confidence": 1,
+      "end": 73.71,
+      "word": "next",
+      "punct": "next"
+    },
+    {
+      "start": 73.71,
+      "confidence": 1,
+      "end": 73.87,
+      "word": "few",
+      "punct": "few"
+    },
+    {
+      "start": 73.87,
+      "confidence": 1,
+      "end": 74.4,
+      "word": "days",
+      "punct": "days"
+    },
+    {
+      "start": 75.99,
+      "confidence": 1,
+      "end": 76.16,
+      "word": "will",
+      "punct": "will"
+    },
+    {
+      "start": 76.16,
+      "confidence": 1,
+      "end": 76.28,
+      "word": "be",
+      "punct": "be"
+    },
+    {
+      "start": 76.28,
+      "confidence": 1,
+      "end": 76.38,
+      "word": "an",
+      "punct": "an"
+    },
+    {
+      "start": 76.38,
+      "confidence": 1,
+      "end": 76.8,
+      "word": "offer",
+      "punct": "offer."
+    },
+    {
+      "start": 76.95,
+      "confidence": 0.87,
+      "end": 77.23,
+      "word": "we",
+      "punct": "We"
+    },
+    {
+      "start": 77.23,
+      "confidence": 0.46,
+      "end": 77.45,
+      "word": "believe",
+      "punct": "believe"
+    },
+    {
+      "start": 77.54,
+      "confidence": 0.5,
+      "end": 77.7,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 77.89,
+      "confidence": 0.95,
+      "end": 78.41,
+      "word": "policies",
+      "punct": "policies"
+    },
+    {
+      "start": 78.41,
+      "confidence": 0.86,
+      "end": 78.53,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 78.52,
+      "confidence": 0.74,
+      "end": 78.68,
+      "word": "it",
+      "punct": "it"
+    },
+    {
+      "start": 78.86,
+      "confidence": 0.51,
+      "end": 78.99,
+      "word": "are",
+      "punct": "are"
+    },
+    {
+      "start": 78.99,
+      "confidence": 1,
+      "end": 79.26,
+      "word": "very",
+      "punct": "very"
+    },
+    {
+      "start": 79.26,
+      "confidence": 1,
+      "end": 79.83,
+      "word": "popular",
+      "punct": "popular"
+    },
+    {
+      "start": 80.32,
+      "confidence": 0.61,
+      "end": 80.45,
+      "word": "an",
+      "punct": "an"
+    },
+    {
+      "start": 80.46,
+      "confidence": 1,
+      "end": 80.91,
+      "word": "offer",
+      "punct": "offer"
+    },
+    {
+      "start": 81.02,
+      "confidence": 0.57,
+      "end": 81.1,
+      "word": "that",
+      "punct": "that"
+    },
+    {
+      "start": 81.17,
+      "confidence": 0.97,
+      "end": 81.35,
+      "word": "will",
+      "punct": "will"
+    },
+    {
+      "start": 81.35,
+      "confidence": 0.99,
+      "end": 82,
+      "word": "transform",
+      "punct": "transform"
+    },
+    {
+      "start": 82,
+      "confidence": 1,
+      "end": 82.1,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 82.1,
+      "confidence": 1,
+      "end": 82.68,
+      "word": "lives",
+      "punct": "lives"
+    },
+    {
+      "start": 82.82,
+      "confidence": 1,
+      "end": 82.97,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 82.97,
+      "confidence": 1,
+      "end": 83.21,
+      "word": "many",
+      "punct": "many"
+    },
+    {
+      "start": 83.21,
+      "confidence": 1,
+      "end": 83.69,
+      "word": "people",
+      "punct": "people"
+    },
+    {
+      "start": 83.81,
+      "confidence": 1,
+      "end": 83.93,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 83.93,
+      "confidence": 0.99,
+      "end": 84.08,
+      "word": "our",
+      "punct": "our"
+    },
+    {
+      "start": 84.08,
+      "confidence": 1,
+      "end": 84.84,
+      "word": "society",
+      "punct": "society"
+    },
+    {
+      "start": 85.18,
+      "confidence": 0.88,
+      "end": 85.42,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 85.43,
+      "confidence": 0.83,
+      "end": 86.06,
+      "word": "ensure",
+      "punct": "ensure"
+    },
+    {
+      "start": 86.43,
+      "confidence": 1,
+      "end": 86.67,
+      "word": "we",
+      "punct": "we"
+    },
+    {
+      "start": 86.67,
+      "confidence": 0.99,
+      "end": 86.79,
+      "word": "have",
+      "punct": "have"
+    },
+    {
+      "start": 86.79,
+      "confidence": 0.98,
+      "end": 86.87,
+      "word": "a",
+      "punct": "a"
+    },
+    {
+      "start": 86.87,
+      "confidence": 1,
+      "end": 87.33,
+      "word": "government",
+      "punct": "government"
+    },
+    {
+      "start": 87.33,
+      "confidence": 1,
+      "end": 87.47,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 87.47,
+      "confidence": 1,
+      "end": 87.95,
+      "word": "britain",
+      "punct": "Britain."
+    },
+    {
+      "start": 88.38,
+      "confidence": 1,
+      "end": 88.62,
+      "word": "on",
+      "punct": "On"
+    },
+    {
+      "start": 88.62,
+      "confidence": 1,
+      "end": 88.85,
+      "word": "june",
+      "punct": "June,"
+    },
+    {
+      "start": 88.85,
+      "confidence": 1,
+      "end": 88.99,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 88.99,
+      "confidence": 1,
+      "end": 89.45,
+      "word": "eighth",
+      "punct": "eighth."
+    },
+    {
+      "start": 89.82,
+      "confidence": 1,
+      "end": 90.07,
+      "word": "that",
+      "punct": "That"
+    },
+    {
+      "start": 90.07,
+      "confidence": 0.98,
+      "end": 90.37,
+      "word": "will",
+      "punct": "will"
+    },
+    {
+      "start": 90.47,
+      "confidence": 1,
+      "end": 90.8,
+      "word": "work",
+      "punct": "work"
+    },
+    {
+      "start": 90.8,
+      "confidence": 1,
+      "end": 90.92,
+      "word": "for",
+      "punct": "for"
+    },
+    {
+      "start": 90.92,
+      "confidence": 1,
+      "end": 91.03,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 91.03,
+      "confidence": 1,
+      "end": 91.43,
+      "word": "many",
+      "punct": "many."
+    },
+    {
+      "start": 91.58,
+      "confidence": 1,
+      "end": 91.86,
+      "word": "not",
+      "punct": "Not"
+    },
+    {
+      "start": 91.86,
+      "confidence": 1,
+      "end": 91.94,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 91.94,
+      "confidence": 1,
+      "end": 92.41,
+      "word": "few",
+      "punct": "few."
+    },
+    {
+      "start": 92.83,
+      "confidence": 1,
+      "end": 93.05,
+      "word": "give",
+      "punct": "Give"
+    },
+    {
+      "start": 93.05,
+      "confidence": 1,
+      "end": 93.61,
+      "word": "everyone",
+      "punct": "everyone"
+    },
+    {
+      "start": 93.78,
+      "confidence": 0.87,
+      "end": 93.9,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 93.92,
+      "confidence": 0.82,
+      "end": 94.07,
+      "word": "our",
+      "punct": "our"
+    },
+    {
+      "start": 94.07,
+      "confidence": 1,
+      "end": 94.89,
+      "word": "society",
+      "punct": "society,"
+    },
+    {
+      "start": 95.08,
+      "confidence": 0.65,
+      "end": 95.22,
+      "word": "a",
+      "punct": "a"
+    },
+    {
+      "start": 95.23,
+      "confidence": 1,
+      "end": 95.66,
+      "word": "decent",
+      "punct": "decent"
+    },
+    {
+      "start": 95.66,
+      "confidence": 0.79,
+      "end": 96.48,
+      "word": "opportunity",
+      "punct": "opportunity"
+    },
+    {
+      "start": 96.6,
+      "confidence": 0.82,
+      "end": 96.72,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 96.74,
+      "confidence": 0.96,
+      "end": 96.82,
+      "word": "a",
+      "punct": "a"
+    },
+    {
+      "start": 96.82,
+      "confidence": 0.98,
+      "end": 97.24,
+      "word": "decent",
+      "punct": "decent"
+    },
+    {
+      "start": 97.24,
+      "confidence": 0.92,
+      "end": 97.8,
+      "word": "chance",
+      "punct": "chance."
+    },
+    {
+      "start": 98,
+      "confidence": 0.93,
+      "end": 98.17,
+      "word": "so",
+      "punct": "So"
+    },
+    {
+      "start": 98.19,
+      "confidence": 0.83,
+      "end": 98.62,
+      "word": "nobody's",
+      "punct": "nobody's"
+    },
+    {
+      "start": 98.64,
+      "confidence": 1,
+      "end": 99.18,
+      "word": "ignored",
+      "punct": "ignored,"
+    },
+    {
+      "start": 99.3,
+      "confidence": 0.85,
+      "end": 99.75,
+      "word": "nobody's",
+      "punct": "nobody's"
+    },
+    {
+      "start": 99.75,
+      "confidence": 1,
+      "end": 100.3,
+      "word": "forgotten",
+      "punct": "forgotten."
+    },
+    {
+      "start": 100.5,
+      "confidence": 0.91,
+      "end": 100.67,
+      "word": "and",
+      "punct": "And"
+    },
+    {
+      "start": 100.67,
+      "confidence": 0.55,
+      "end": 100.86,
+      "word": "nobody",
+      "punct": "nobody"
+    },
+    {
+      "start": 100.86,
+      "confidence": 0.54,
+      "end": 101.21,
+      "word": "is",
+      "punct": "is"
+    },
+    {
+      "start": 101.29,
+      "confidence": 1,
+      "end": 101.56,
+      "word": "left",
+      "punct": "left"
+    },
+    {
+      "start": 101.56,
+      "confidence": 1,
+      "end": 102.11,
+      "word": "behind",
+      "punct": "behind"
+    },
+    {
+      "start": 102.49,
+      "confidence": 0.73,
+      "end": 102.6,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 102.61,
+      "confidence": 1,
+      "end": 103.4,
+      "word": "details",
+      "punct": "details"
+    },
+    {
+      "start": 103.55,
+      "confidence": 1,
+      "end": 103.7,
+      "word": "will",
+      "punct": "will"
+    },
+    {
+      "start": 103.7,
+      "confidence": 1,
+      "end": 103.82,
+      "word": "be",
+      "punct": "be"
+    },
+    {
+      "start": 103.82,
+      "confidence": 1,
+      "end": 104.49,
+      "word": "published",
+      "punct": "published"
+    },
+    {
+      "start": 104.63,
+      "confidence": 1,
+      "end": 104.76,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 104.76,
+      "confidence": 1,
+      "end": 104.83,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 104.83,
+      "confidence": 1,
+      "end": 105.08,
+      "word": "next",
+      "punct": "next"
+    },
+    {
+      "start": 105.08,
+      "confidence": 0.99,
+      "end": 105.25,
+      "word": "few",
+      "punct": "few"
+    },
+    {
+      "start": 105.25,
+      "confidence": 1,
+      "end": 105.78,
+      "word": "days",
+      "punct": "days,"
+    },
+    {
+      "start": 106.08,
+      "confidence": 0.97,
+      "end": 106.21,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 106.22,
+      "confidence": 1,
+      "end": 106.95,
+      "word": "details",
+      "punct": "details"
+    },
+    {
+      "start": 107.1,
+      "confidence": 0.8,
+      "end": 107.29,
+      "word": "will",
+      "punct": "will"
+    },
+    {
+      "start": 107.29,
+      "confidence": 0.78,
+      "end": 107.41,
+      "word": "be",
+      "punct": "be"
+    },
+    {
+      "start": 107.41,
+      "confidence": 0.88,
+      "end": 107.74,
+      "word": "set",
+      "punct": "set"
+    },
+    {
+      "start": 107.74,
+      "confidence": 1,
+      "end": 107.98,
+      "word": "out",
+      "punct": "out"
+    },
+    {
+      "start": 107.98,
+      "confidence": 1,
+      "end": 108.22,
+      "word": "to",
+      "punct": "to"
+    },
+    {
+      "start": 108.22,
+      "confidence": 1,
+      "end": 108.49,
+      "word": "you",
+      "punct": "you,"
+    },
+    {
+      "start": 108.63,
+      "confidence": 1,
+      "end": 109.41,
+      "word": "including",
+      "punct": "including"
+    },
+    {
+      "start": 109.7,
+      "confidence": 0.87,
+      "end": 109.79,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 109.82,
+      "confidence": 1,
+      "end": 110.59,
+      "word": "costings",
+      "punct": "costings"
+    },
+    {
+      "start": 110.71,
+      "confidence": 1,
+      "end": 110.94,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 110.97,
+      "confidence": 1,
+      "end": 111.46,
+      "word": "all",
+      "punct": "all"
+    },
+    {
+      "start": 111.55,
+      "confidence": 0.59,
+      "end": 111.6,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 111.65,
+      "confidence": 0.99,
+      "end": 112.24,
+      "word": "pledges",
+      "punct": "pledges"
+    },
+    {
+      "start": 112.44,
+      "confidence": 1,
+      "end": 113.05,
+      "word": "promises",
+      "punct": "promises"
+    },
+    {
+      "start": 113.24,
+      "confidence": 1,
+      "end": 113.42,
+      "word": "we",
+      "punct": "we"
+    },
+    {
+      "start": 113.42,
+      "confidence": 0.99,
+      "end": 113.75,
+      "word": "make",
+      "punct": "make"
+    },
+    {
+      "start": 114.01,
+      "confidence": 0.82,
+      "end": 114.14,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 114.17,
+      "confidence": 1,
+      "end": 114.28,
+      "word": "i",
+      "punct": "I"
+    },
+    {
+      "start": 114.28,
+      "confidence": 1,
+      "end": 114.76,
+      "word": "know",
+      "punct": "know"
+    },
+    {
+      "start": 114.85,
+      "confidence": 0.94,
+      "end": 115.06,
+      "word": "you're",
+      "punct": "you're"
+    },
+    {
+      "start": 115.06,
+      "confidence": 1,
+      "end": 115.23,
+      "word": "all",
+      "punct": "all"
+    },
+    {
+      "start": 115.23,
+      "confidence": 1,
+      "end": 115.52,
+      "word": "looking",
+      "punct": "looking"
+    },
+    {
+      "start": 115.52,
+      "confidence": 1,
+      "end": 115.83,
+      "word": "forward",
+      "punct": "forward"
+    },
+    {
+      "start": 115.83,
+      "confidence": 1,
+      "end": 115.95,
+      "word": "to",
+      "punct": "to"
+    },
+    {
+      "start": 115.95,
+      "confidence": 1,
+      "end": 116.32,
+      "word": "reading",
+      "punct": "reading"
+    },
+    {
+      "start": 116.32,
+      "confidence": 0.96,
+      "end": 116.44,
+      "word": "it",
+      "punct": "it"
+    },
+    {
+      "start": 116.57,
+      "confidence": 1,
+      "end": 116.73,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 116.73,
+      "confidence": 1,
+      "end": 117.05,
+      "word": "great",
+      "punct": "great"
+    },
+    {
+      "start": 117.05,
+      "confidence": 1,
+      "end": 117.63,
+      "word": "detail",
+      "punct": "detail"
+    },
+    {
+      "start": 117.73,
+      "confidence": 0.88,
+      "end": 117.88,
+      "word": "at",
+      "punct": "at"
+    },
+    {
+      "start": 117.89,
+      "confidence": 1,
+      "end": 118.16,
+      "word": "that",
+      "punct": "that"
+    },
+    {
+      "start": 118.16,
+      "confidence": 1,
+      "end": 118.6,
+      "word": "time",
+      "punct": "time"
+    },
+    {
+      "start": 118.92,
+      "confidence": 0.81,
+      "end": 119.12,
+      "word": "at",
+      "punct": "at"
+    },
+    {
+      "start": 119.17,
+      "confidence": 1,
+      "end": 119.48,
+      "word": "that",
+      "punct": "that"
+    },
+    {
+      "start": 119.48,
+      "confidence": 0.92,
+      "end": 119.78,
+      "word": "point",
+      "punct": "point"
+    },
+    {
+      "start": 119.78,
+      "confidence": 0.81,
+      "end": 120.1,
+      "word": "there",
+      "punct": "there"
+    },
+    {
+      "start": 120.42,
+      "confidence": 0.97,
+      "end": 120.6,
+      "word": "at",
+      "punct": "at"
+    },
+    {
+      "start": 120.64,
+      "confidence": 1,
+      "end": 120.94,
+      "word": "that",
+      "punct": "that"
+    },
+    {
+      "start": 120.94,
+      "confidence": 0.99,
+      "end": 121.52,
+      "word": "point",
+      "punct": "point."
+    },
+    {
+      "start": 121.68,
+      "confidence": 0.65,
+      "end": 121.92,
+      "word": "you'll",
+      "punct": "You'll"
+    },
+    {
+      "start": 121.96,
+      "confidence": 1,
+      "end": 122.05,
+      "word": "be",
+      "punct": "be"
+    },
+    {
+      "start": 122.05,
+      "confidence": 1,
+      "end": 122.23,
+      "word": "able",
+      "punct": "able"
+    },
+    {
+      "start": 122.23,
+      "confidence": 1,
+      "end": 122.37,
+      "word": "to",
+      "punct": "to"
+    },
+    {
+      "start": 122.37,
+      "confidence": 1,
+      "end": 122.73,
+      "word": "ask",
+      "punct": "ask"
+    },
+    {
+      "start": 122.82,
+      "confidence": 1,
+      "end": 123.09,
+      "word": "all",
+      "punct": "all"
+    },
+    {
+      "start": 123.09,
+      "confidence": 1,
+      "end": 123.19,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 123.19,
+      "confidence": 1,
+      "end": 123.76,
+      "word": "questions",
+      "punct": "questions"
+    },
+    {
+      "start": 123.9,
+      "confidence": 0.9,
+      "end": 124.06,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 124.06,
+      "confidence": 0.99,
+      "end": 124.33,
+      "word": "like",
+      "punct": "like"
+    },
+    {
+      "start": 124.62,
+      "confidence": 0.88,
+      "end": 124.8,
+      "word": "that",
+      "punct": "that"
+    },
+    {
+      "start": 124.88,
+      "confidence": 1,
+      "end": 125.46,
+      "word": "today",
+      "punct": "today."
+    },
+    {
+      "start": 125.71,
+      "confidence": 1,
+      "end": 125.97,
+      "word": "thank",
+      "punct": "Thank"
+    },
+    {
+      "start": 125.97,
+      "confidence": 1,
+      "end": 126.09,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 126.08,
+      "confidence": 0.63,
+      "end": 126.22,
+      "word": "all",
+      "punct": "all"
+    },
+    {
+      "start": 126.52,
+      "confidence": 1,
+      "end": 126.85,
+      "word": "very",
+      "punct": "very"
+    },
+    {
+      "start": 126.85,
+      "confidence": 1,
+      "end": 126.99,
+      "word": "much",
+      "punct": "much."
+    },
+    {
+      "start": 127.18,
+      "confidence": 0.99,
+      "end": 127.48,
+      "word": "thank",
+      "punct": "Thank"
+    },
+    {
+      "start": 127.48,
+      "confidence": 0.98,
+      "end": 127.6,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 127.6,
+      "confidence": 0.81,
+      "end": 128.01,
+      "word": "all",
+      "punct": "all."
+    },
+    {
+      "start": 128.16,
+      "confidence": 1,
+      "end": 128.43,
+      "word": "thank",
+      "punct": "Thank"
+    },
+    {
+      "start": 128.43,
+      "confidence": 0.95,
+      "end": 128.72,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 128.72,
+      "confidence": 0.56,
+      "end": 128.77,
+      "word": "all",
+      "punct": "all."
+    },
+    {
+      "start": 131.31,
+      "confidence": 1,
+      "end": 131.61,
+      "word": "thank",
+      "punct": "Thank"
+    },
+    {
+      "start": 131.61,
+      "confidence": 1,
+      "end": 131.75,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 131.75,
+      "confidence": 1,
+      "end": 132.13,
+      "word": "all",
+      "punct": "all"
+    },
+    {
+      "start": 132.27,
+      "confidence": 1,
+      "end": 132.56,
+      "word": "very",
+      "punct": "very"
+    },
+    {
+      "start": 132.56,
+      "confidence": 1,
+      "end": 132.94,
+      "word": "much",
+      "punct": "much"
+    },
+    {
+      "start": 133.03,
+      "confidence": 1,
+      "end": 133.13,
+      "word": "for",
+      "punct": "for"
+    },
+    {
+      "start": 133.16,
+      "confidence": 1,
+      "end": 133.44,
+      "word": "coming",
+      "punct": "coming"
+    },
+    {
+      "start": 133.44,
+      "confidence": 1,
+      "end": 133.78,
+      "word": "today",
+      "punct": "today."
+    },
+    {
+      "start": 134.17,
+      "confidence": 0.68,
+      "end": 136.1,
+      "word": "the",
+      "punct": "The"
+    }
+  ]
+}

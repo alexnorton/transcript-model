@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "version": "0.0.8"
+  },
+  "@type": "AudioFile",
+  "speakers": [
+    {
+      "@id": "S1",
+      "gender": "F"
+    },
+    {
+      "@id": "S2",
+      "gender": "M"
+    },
+    {
+      "@id": "S12",
+      "gender": "M"
+    },
+    {
+      "@id": "S22",
+      "gender": "M"
+    },
+    {
+      "@id": "S23",
+      "gender": "F"
+    }
+  ],
+  "segments": [
+    {
+      "@type": "Segment",
+      "start": 8.72,
+      "duration": 2.25,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S1",
+        "gender": "F"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 12.43,
+      "duration": 12.88,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S2",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 28.31,
+      "duration": 2.66,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S2",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 37.89,
+      "duration": 5.92,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S12",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 43.95,
+      "duration": 13.98,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S12",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 57.93,
+      "duration": 6.47,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S12",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 64.54,
+      "duration": 3.31,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S12",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 67.99,
+      "duration": 12.12,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S12",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 80.11,
+      "duration": 9.32,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S12",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 89.58,
+      "duration": 8.24,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S12",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 97.82,
+      "duration": 18.68,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S12",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 116.5,
+      "duration": 9.02,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S12",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 125.52,
+      "duration": 11.99,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S22",
+        "gender": "M"
+      }
+    },
+    {
+      "@type": "Segment",
+      "start": 138.62,
+      "duration": 3.16,
+      "bandwidth": "S",
+      "speaker": {
+        "@id": "S23",
+        "gender": "F"
+      }
+    }
+  ]
+}
