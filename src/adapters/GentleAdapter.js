@@ -51,15 +51,17 @@ export const stripPunctuation = word => word.replace(/[^\w]/g, '');
 export const getWordDurationEquation = (gentleWords) => {
   const sum = [0, 0, 0, 0, 0];
 
-  gentleWords.forEach((word) => {
-    const wordLength = stripPunctuation(word.word).length;
-    const wordDuration = word.end - word.start;
-    sum[0] += wordLength;
-    sum[1] += wordDuration;
-    sum[2] += wordLength * wordLength;
-    sum[3] += wordLength * wordDuration;
-    sum[4] += wordDuration * wordDuration;
-  });
+  gentleWords
+    .filter(word => word.start !== undefined)
+    .forEach((word) => {
+      const wordLength = stripPunctuation(word.word).length;
+      const wordDuration = word.end - word.start;
+      sum[0] += wordLength;
+      sum[1] += wordDuration;
+      sum[2] += wordLength * wordLength;
+      sum[3] += wordLength * wordDuration;
+      sum[4] += wordDuration * wordDuration;
+    });
 
   const run = ((gentleWords.length * sum[2]) - (sum[0] * sum[0]));
   const rise = ((gentleWords.length * sum[3]) - (sum[0] * sum[1]));
@@ -166,46 +168,46 @@ export const interpolateSegmentWordTimings = (segmentWords, wordDurationEquation
 
 class GentleAdapter {
   static parse(gentle) {
-  const segments = getSegments(gentle.transcript).map(segment =>
-    ({ ...segment, words: getWords(segment.text) }));
+    const segments = getSegments(gentle.transcript).map(segment =>
+      ({ ...segment, words: getWords(segment.text) }));
 
-  gentle.words.forEach((gentleWord) => {
-    const segment = segments.find(s =>
-      s.startIndex <= gentleWord.startOffset && s.endIndex > gentleWord.endOffset);
+    gentle.words.forEach((gentleWord) => {
+      const segment = segments.find(s =>
+        s.startIndex <= gentleWord.startOffset && s.endIndex > gentleWord.endOffset);
 
-    const word = segment.words.find(w =>
-      segment.startIndex + w.startIndex <= gentleWord.startOffset
-      && segment.startIndex + w.endIndex >= gentleWord.endOffset);
+      const word = segment.words.find(w =>
+        segment.startIndex + w.startIndex <= gentleWord.startOffset
+        && segment.startIndex + w.endIndex >= gentleWord.endOffset);
 
-    word.startTime = gentleWord.start;
-    word.endTime = gentleWord.end;
-  });
+      word.startTime = gentleWord.start;
+      word.endTime = gentleWord.end;
+    });
 
-  const wordDurationEquation = getWordDurationEquation(gentle.words);
+    const wordDurationEquation = getWordDurationEquation(gentle.words);
 
-  const segmentsWithInterpolatedWords = segments.map(segment =>
-    ({ ...segment, words: interpolateSegmentWordTimings(segment.words, wordDurationEquation) }));
+    const segmentsWithInterpolatedWords = segments.map(segment =>
+      ({ ...segment, words: interpolateSegmentWordTimings(segment.words, wordDurationEquation) }));
 
     const speakers = new Immutable.List([
-    new Speaker(),
+      new Speaker(),
     ]);
 
     const transcriptSegments = new Immutable.List(segmentsWithInterpolatedWords
-    // discard any segments without any timings
-    .filter(segment => segment.words[0].startTime)
-    .map(segment => new TranscriptSegment({
-      speaker: 0,
+      // discard any segments without any timings
+      .filter(segment => segment.words[0].startTime)
+      .map(segment => new TranscriptSegment({
+        speaker: 0,
         words: new Immutable.List(segment.words.map(word => new TranscriptWord({
-        start: word.startTime,
-        end: word.endTime,
-        text: word.text,
+          start: word.startTime,
+          end: word.endTime,
+          text: word.text,
         }))),
       })));
 
-  return new Transcript({
-    speakers,
-    segments: transcriptSegments,
-  });
+    return new Transcript({
+      speakers,
+      segments: transcriptSegments,
+    });
   }
 }
 
