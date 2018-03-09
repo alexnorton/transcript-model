@@ -1,4 +1,4 @@
-import transcriptFromGentle, {
+import GentleAdapter, {
   getSegments,
   getWords,
   interpolateSegmentWordTimings,
@@ -428,16 +428,18 @@ describe('getEstimatedWordDuration', () => {
   });
 });
 
-describe('transcriptFromGentle', () => {
-  it('should return a Transcript correctly', () => {
-    const transcript = transcriptFromGentle(gentle);
+describe('GentleAdapter', () => {
+  describe('parse', () => {
+    it('should return a Transcript correctly', () => {
+      const transcript = GentleAdapter.parse(gentle);
 
-    expect(transcript.segments.length).toBe(7);
+      expect(transcript.segments.size).toBe(7);
 
-    transcript.segments.forEach((segment) => {
-      segment.words.forEach((word) => {
-        expect(word.start).toBeDefined();
-        expect(word.end).toBeDefined();
+      transcript.segments.forEach((segment) => {
+        segment.words.forEach((word) => {
+          expect(word.start).toBeDefined();
+          expect(word.end).toBeDefined();
+        });
       });
     });
   });

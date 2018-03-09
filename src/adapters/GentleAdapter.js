@@ -1,3 +1,5 @@
+import Immutable from 'immutable';
+
 import Speaker from '../Speaker';
 import TranscriptSegment from '../TranscriptSegment';
 import TranscriptWord from '../TranscriptWord';
@@ -162,7 +164,8 @@ export const interpolateSegmentWordTimings = (segmentWords, wordDurationEquation
   return interpolatedSegmentWords;
 };
 
-export default (gentle) => {
+class GentleAdapter {
+  static parse(gentle) {
   const segments = getSegments(gentle.transcript).map(segment =>
     ({ ...segment, words: getWords(segment.text) }));
 
@@ -183,24 +186,27 @@ export default (gentle) => {
   const segmentsWithInterpolatedWords = segments.map(segment =>
     ({ ...segment, words: interpolateSegmentWordTimings(segment.words, wordDurationEquation) }));
 
-  const speakers = [
+    const speakers = new Immutable.List([
     new Speaker(),
-  ];
+    ]);
 
-  const transcriptSegments = segmentsWithInterpolatedWords
+    const transcriptSegments = new Immutable.List(segmentsWithInterpolatedWords
     // discard any segments without any timings
     .filter(segment => segment.words[0].startTime)
     .map(segment => new TranscriptSegment({
       speaker: 0,
-      words: segment.words.map(word => new TranscriptWord({
+        words: new Immutable.List(segment.words.map(word => new TranscriptWord({
         start: word.startTime,
         end: word.endTime,
         text: word.text,
-      })),
-    }));
+        }))),
+      })));
 
   return new Transcript({
     speakers,
     segments: transcriptSegments,
   });
-};
+  }
+}
+
+export default GentleAdapter;
