@@ -1,0 +1,1460 @@
+{
+  "metadata": {
+    "version": "0.0.10"
+  },
+  "text":
+    "we tried to sell this as a critic and pristine and untouched and this looks like pictures but once you get here and you start to walk along the coast by you you get a completely other just last year we took thirty tonnes holes will return food wrapping bottles but the main part weight wise is equipment from from fisheries are lots and lots of pieces of rope someone cos someone obviously torn the international fishing fleet is operating offshore we clearly finds signs that the they contribute to this but still we we find from all over europe are some from across the atlantic i mean you can throw things into the ocean in florida and think where i threw it away and appear on our shores they rather quickly breaks down into smaller pieces and the even tiny little favours the coastline as homeless you can go there hear what what to say it's so obvious that what we are doing here is like the tip of the tip of the iceberg but it's the visible to the this is what is readily available we pick up this part this little piece of litter and it's gone down he won't go to the area",
+  "punct":
+    "We tried to sell this as a critic and pristine and untouched. And this looks like pictures, but once you get here and you start to walk along the coast by you. You get a completely other. Just last year. We took thirty tonnes holes will return food wrapping bottles. But the main part. Weight wise is equipment from. From fisheries are lots and lots of pieces of rope someone cos someone obviously torn the international fishing fleet is operating offshore. We clearly finds signs that the they contribute to this, but still we. We find from all over Europe are some from across the Atlantic. I mean. You can throw things into the ocean in Florida and think where I threw it away and appear on our shores. They rather quickly breaks down into smaller pieces and the even tiny little favours the coastline as homeless. You can go there. Hear what, what to say it's so obvious that what we are doing here is like the tip of the tip of the iceberg, but it's the visible to the. This is what is readily available. We pick up this part. This little piece of litter and it's gone down. He won't go to the area.",
+  "words": [
+    {
+      "start": 1.55,
+      "confidence": 0.87,
+      "end": 1.7,
+      "word": "we",
+      "punct": "We"
+    },
+    {
+      "start": 1.7,
+      "confidence": 0.7,
+      "end": 1.94,
+      "word": "tried",
+      "punct": "tried"
+    },
+    {
+      "start": 1.94,
+      "confidence": 1,
+      "end": 2.05,
+      "word": "to",
+      "punct": "to"
+    },
+    {
+      "start": 2.05,
+      "confidence": 1,
+      "end": 2.3,
+      "word": "sell",
+      "punct": "sell"
+    },
+    {
+      "start": 2.3,
+      "confidence": 1,
+      "end": 2.5,
+      "word": "this",
+      "punct": "this"
+    },
+    {
+      "start": 2.5,
+      "confidence": 0.98,
+      "end": 2.73,
+      "word": "as",
+      "punct": "as"
+    },
+    {
+      "start": 2.73,
+      "confidence": 0.8,
+      "end": 2.9,
+      "word": "a",
+      "punct": "a"
+    },
+    {
+      "start": 2.91,
+      "confidence": 0.81,
+      "end": 3.33,
+      "word": "critic",
+      "punct": "critic"
+    },
+    {
+      "start": 3.33,
+      "confidence": 1,
+      "end": 3.72,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 3.75,
+      "confidence": 1,
+      "end": 4.38,
+      "word": "pristine",
+      "punct": "pristine"
+    },
+    {
+      "start": 4.38,
+      "confidence": 0.99,
+      "end": 4.51,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 4.51,
+      "confidence": 1,
+      "end": 5.25,
+      "word": "untouched",
+      "punct": "untouched."
+    },
+    {
+      "start": 6.93,
+      "confidence": 0.96,
+      "end": 7.06,
+      "word": "and",
+      "punct": "And"
+    },
+    {
+      "start": 7.07,
+      "confidence": 0.94,
+      "end": 7.24,
+      "word": "this",
+      "punct": "this"
+    },
+    {
+      "start": 7.25,
+      "confidence": 0.98,
+      "end": 7.59,
+      "word": "looks",
+      "punct": "looks"
+    },
+    {
+      "start": 7.6,
+      "confidence": 0.92,
+      "end": 7.76,
+      "word": "like",
+      "punct": "like"
+    },
+    {
+      "start": 8.1,
+      "confidence": 1,
+      "end": 8.64,
+      "word": "pictures",
+      "punct": "pictures,"
+    },
+    {
+      "start": 8.64,
+      "confidence": 1,
+      "end": 8.86,
+      "word": "but",
+      "punct": "but"
+    },
+    {
+      "start": 9.07,
+      "confidence": 1,
+      "end": 9.49,
+      "word": "once",
+      "punct": "once"
+    },
+    {
+      "start": 9.49,
+      "confidence": 0.99,
+      "end": 9.57,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 9.57,
+      "confidence": 0.98,
+      "end": 9.77,
+      "word": "get",
+      "punct": "get"
+    },
+    {
+      "start": 9.77,
+      "confidence": 0.75,
+      "end": 9.93,
+      "word": "here",
+      "punct": "here"
+    },
+    {
+      "start": 9.93,
+      "confidence": 0.75,
+      "end": 10.22,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 10.23,
+      "confidence": 0.74,
+      "end": 10.69,
+      "word": "you",
+      "punct": "you"
+    },
+    {
+      "start": 10.71,
+      "confidence": 0.85,
+      "end": 10.98,
+      "word": "start",
+      "punct": "start"
+    },
+    {
+      "start": 11,
+      "confidence": 1,
+      "end": 11.29,
+      "word": "to",
+      "punct": "to"
+    },
+    {
+      "start": 11.79,
+      "confidence": 1,
+      "end": 12.05,
+      "word": "walk",
+      "punct": "walk"
+    },
+    {
+      "start": 12.05,
+      "confidence": 1,
+      "end": 12.28,
+      "word": "along",
+      "punct": "along"
+    },
+    {
+      "start": 12.28,
+      "confidence": 0.99,
+      "end": 12.36,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 12.36,
+      "confidence": 0.51,
+      "end": 12.52,
+      "word": "coast",
+      "punct": "coast"
+    },
+    {
+      "start": 12.52,
+      "confidence": 0.53,
+      "end": 12.82,
+      "word": "by",
+      "punct": "by"
+    },
+    {
+      "start": 12.83,
+      "confidence": 0.46,
+      "end": 13.28,
+      "word": "you",
+      "punct": "you."
+    },
+    {
+      "start": 14.07,
+      "confidence": 0.9,
+      "end": 14.48,
+      "word": "you",
+      "punct": "You"
+    },
+    {
+      "start": 14.48,
+      "confidence": 1,
+      "end": 14.68,
+      "word": "get",
+      "punct": "get"
+    },
+    {
+      "start": 14.68,
+      "confidence": 0.97,
+      "end": 14.75,
+      "word": "a",
+      "punct": "a"
+    },
+    {
+      "start": 14.75,
+      "confidence": 1,
+      "end": 15.31,
+      "word": "completely",
+      "punct": "completely"
+    },
+    {
+      "start": 15.31,
+      "confidence": 1,
+      "end": 15.55,
+      "word": "other",
+      "punct": "other."
+    },
+    {
+      "start": 33.83,
+      "confidence": 0.99,
+      "end": 34.07,
+      "word": "just",
+      "punct": "Just"
+    },
+    {
+      "start": 34.07,
+      "confidence": 0.99,
+      "end": 34.39,
+      "word": "last",
+      "punct": "last"
+    },
+    {
+      "start": 34.4,
+      "confidence": 0.88,
+      "end": 34.58,
+      "word": "year",
+      "punct": "year."
+    },
+    {
+      "start": 34.68,
+      "confidence": 0.99,
+      "end": 34.94,
+      "word": "we",
+      "punct": "We"
+    },
+    {
+      "start": 35.39,
+      "confidence": 0.34,
+      "end": 35.63,
+      "word": "took",
+      "punct": "took"
+    },
+    {
+      "start": 35.77,
+      "confidence": 0.97,
+      "end": 36.18,
+      "word": "thirty",
+      "punct": "thirty"
+    },
+    {
+      "start": 36.19,
+      "confidence": 0.47,
+      "end": 36.75,
+      "word": "tonnes",
+      "punct": "tonnes"
+    },
+    {
+      "start": 38.28,
+      "confidence": 0.43,
+      "end": 38.54,
+      "word": "holes",
+      "punct": "holes"
+    },
+    {
+      "start": 39.02,
+      "confidence": 0.69,
+      "end": 39.27,
+      "word": "will",
+      "punct": "will"
+    },
+    {
+      "start": 39.67,
+      "confidence": 0.97,
+      "end": 40.24,
+      "word": "return",
+      "punct": "return"
+    },
+    {
+      "start": 40.79,
+      "confidence": 1,
+      "end": 41.25,
+      "word": "food",
+      "punct": "food"
+    },
+    {
+      "start": 41.25,
+      "confidence": 0.96,
+      "end": 41.97,
+      "word": "wrapping",
+      "punct": "wrapping"
+    },
+    {
+      "start": 42.78,
+      "confidence": 1,
+      "end": 43.41,
+      "word": "bottles",
+      "punct": "bottles."
+    },
+    {
+      "start": 45.16,
+      "confidence": 0.57,
+      "end": 45.25,
+      "word": "but",
+      "punct": "But"
+    },
+    {
+      "start": 45.33,
+      "confidence": 0.94,
+      "end": 45.55,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 45.59,
+      "confidence": 1,
+      "end": 46.02,
+      "word": "main",
+      "punct": "main"
+    },
+    {
+      "start": 46.02,
+      "confidence": 0.99,
+      "end": 46.34,
+      "word": "part",
+      "punct": "part."
+    },
+    {
+      "start": 46.53,
+      "confidence": 0.59,
+      "end": 46.94,
+      "word": "weight",
+      "punct": "Weight"
+    },
+    {
+      "start": 46.94,
+      "confidence": 0.69,
+      "end": 47.27,
+      "word": "wise",
+      "punct": "wise"
+    },
+    {
+      "start": 47.28,
+      "confidence": 1,
+      "end": 47.79,
+      "word": "is",
+      "punct": "is"
+    },
+    {
+      "start": 47.82,
+      "confidence": 1,
+      "end": 48.39,
+      "word": "equipment",
+      "punct": "equipment"
+    },
+    {
+      "start": 48.39,
+      "confidence": 1,
+      "end": 48.88,
+      "word": "from",
+      "punct": "from."
+    },
+    {
+      "start": 48.95,
+      "confidence": 1,
+      "end": 49.15,
+      "word": "from",
+      "punct": "From"
+    },
+    {
+      "start": 49.15,
+      "confidence": 0.99,
+      "end": 49.98,
+      "word": "fisheries",
+      "punct": "fisheries"
+    },
+    {
+      "start": 50.18,
+      "confidence": 0.7,
+      "end": 50.79,
+      "word": "are",
+      "punct": "are"
+    },
+    {
+      "start": 51.1,
+      "confidence": 0.99,
+      "end": 51.49,
+      "word": "lots",
+      "punct": "lots"
+    },
+    {
+      "start": 51.5,
+      "confidence": 0.99,
+      "end": 51.58,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 51.58,
+      "confidence": 0.99,
+      "end": 51.81,
+      "word": "lots",
+      "punct": "lots"
+    },
+    {
+      "start": 51.91,
+      "confidence": 0.99,
+      "end": 52.13,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 52.15,
+      "confidence": 0.99,
+      "end": 52.72,
+      "word": "pieces",
+      "punct": "pieces"
+    },
+    {
+      "start": 52.72,
+      "confidence": 1,
+      "end": 52.84,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 52.84,
+      "confidence": 1,
+      "end": 53.39,
+      "word": "rope",
+      "punct": "rope"
+    },
+    {
+      "start": 54.39,
+      "confidence": 0.9,
+      "end": 54.84,
+      "word": "someone",
+      "punct": "someone"
+    },
+    {
+      "start": 54.86,
+      "confidence": 0.48,
+      "end": 55.12,
+      "word": "cos",
+      "punct": "cos"
+    },
+    {
+      "start": 55.21,
+      "confidence": 0.99,
+      "end": 55.88,
+      "word": "someone",
+      "punct": "someone"
+    },
+    {
+      "start": 56.08,
+      "confidence": 1,
+      "end": 56.62,
+      "word": "obviously",
+      "punct": "obviously"
+    },
+    {
+      "start": 56.62,
+      "confidence": 1,
+      "end": 57.08,
+      "word": "torn",
+      "punct": "torn"
+    },
+    {
+      "start": 58.21,
+      "confidence": 0.83,
+      "end": 58.63,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 58.63,
+      "confidence": 0.96,
+      "end": 59.22,
+      "word": "international",
+      "punct": "international"
+    },
+    {
+      "start": 59.22,
+      "confidence": 1,
+      "end": 59.57,
+      "word": "fishing",
+      "punct": "fishing"
+    },
+    {
+      "start": 59.57,
+      "confidence": 0.96,
+      "end": 59.84,
+      "word": "fleet",
+      "punct": "fleet"
+    },
+    {
+      "start": 59.84,
+      "confidence": 0.97,
+      "end": 59.98,
+      "word": "is",
+      "punct": "is"
+    },
+    {
+      "start": 59.98,
+      "confidence": 1,
+      "end": 60.54,
+      "word": "operating",
+      "punct": "operating"
+    },
+    {
+      "start": 60.54,
+      "confidence": 0.99,
+      "end": 61.01,
+      "word": "offshore",
+      "punct": "offshore."
+    },
+    {
+      "start": 62.04,
+      "confidence": 0.95,
+      "end": 62.28,
+      "word": "we",
+      "punct": "We"
+    },
+    {
+      "start": 62.28,
+      "confidence": 1,
+      "end": 62.58,
+      "word": "clearly",
+      "punct": "clearly"
+    },
+    {
+      "start": 62.58,
+      "confidence": 0.58,
+      "end": 62.94,
+      "word": "finds",
+      "punct": "finds"
+    },
+    {
+      "start": 62.94,
+      "confidence": 1,
+      "end": 63.68,
+      "word": "signs",
+      "punct": "signs"
+    },
+    {
+      "start": 63.83,
+      "confidence": 1,
+      "end": 64.12,
+      "word": "that",
+      "punct": "that"
+    },
+    {
+      "start": 65.44,
+      "confidence": 0.99,
+      "end": 65.91,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 65.94,
+      "confidence": 1,
+      "end": 66.15,
+      "word": "they",
+      "punct": "they"
+    },
+    {
+      "start": 66.15,
+      "confidence": 0.97,
+      "end": 66.68,
+      "word": "contribute",
+      "punct": "contribute"
+    },
+    {
+      "start": 66.71,
+      "confidence": 1,
+      "end": 66.83,
+      "word": "to",
+      "punct": "to"
+    },
+    {
+      "start": 66.83,
+      "confidence": 1,
+      "end": 67.24,
+      "word": "this",
+      "punct": "this,"
+    },
+    {
+      "start": 71.18,
+      "confidence": 0.83,
+      "end": 71.31,
+      "word": "but",
+      "punct": "but"
+    },
+    {
+      "start": 71.36,
+      "confidence": 1,
+      "end": 71.83,
+      "word": "still",
+      "punct": "still"
+    },
+    {
+      "start": 71.86,
+      "confidence": 0.98,
+      "end": 72.12,
+      "word": "we",
+      "punct": "we."
+    },
+    {
+      "start": 72.13,
+      "confidence": 0.95,
+      "end": 72.41,
+      "word": "we",
+      "punct": "We"
+    },
+    {
+      "start": 72.91,
+      "confidence": 0.97,
+      "end": 73.29,
+      "word": "find",
+      "punct": "find"
+    },
+    {
+      "start": 73.64,
+      "confidence": 1,
+      "end": 73.9,
+      "word": "from",
+      "punct": "from"
+    },
+    {
+      "start": 73.9,
+      "confidence": 1,
+      "end": 74.05,
+      "word": "all",
+      "punct": "all"
+    },
+    {
+      "start": 74.05,
+      "confidence": 0.99,
+      "end": 74.23,
+      "word": "over",
+      "punct": "over"
+    },
+    {
+      "start": 74.23,
+      "confidence": 1,
+      "end": 74.62,
+      "word": "europe",
+      "punct": "Europe"
+    },
+    {
+      "start": 74.66,
+      "confidence": 0.72,
+      "end": 75.46,
+      "word": "are",
+      "punct": "are"
+    },
+    {
+      "start": 75.85,
+      "confidence": 0.72,
+      "end": 76.22,
+      "word": "some",
+      "punct": "some"
+    },
+    {
+      "start": 76.23,
+      "confidence": 1,
+      "end": 76.51,
+      "word": "from",
+      "punct": "from"
+    },
+    {
+      "start": 76.51,
+      "confidence": 1,
+      "end": 76.84,
+      "word": "across",
+      "punct": "across"
+    },
+    {
+      "start": 76.84,
+      "confidence": 1,
+      "end": 76.92,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 76.92,
+      "confidence": 1,
+      "end": 77.56,
+      "word": "atlantic",
+      "punct": "Atlantic."
+    },
+    {
+      "start": 83.4,
+      "confidence": 0.49,
+      "end": 83.43,
+      "word": "i",
+      "punct": "I"
+    },
+    {
+      "start": 83.53,
+      "confidence": 0.5,
+      "end": 83.79,
+      "word": "mean",
+      "punct": "mean."
+    },
+    {
+      "start": 83.8,
+      "confidence": 1,
+      "end": 83.92,
+      "word": "you",
+      "punct": "You"
+    },
+    {
+      "start": 83.92,
+      "confidence": 1,
+      "end": 84.08,
+      "word": "can",
+      "punct": "can"
+    },
+    {
+      "start": 84.08,
+      "confidence": 1,
+      "end": 84.39,
+      "word": "throw",
+      "punct": "throw"
+    },
+    {
+      "start": 84.39,
+      "confidence": 0.74,
+      "end": 84.59,
+      "word": "things",
+      "punct": "things"
+    },
+    {
+      "start": 84.63,
+      "confidence": 1,
+      "end": 84.92,
+      "word": "into",
+      "punct": "into"
+    },
+    {
+      "start": 84.92,
+      "confidence": 1,
+      "end": 85.19,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 85.22,
+      "confidence": 1,
+      "end": 85.59,
+      "word": "ocean",
+      "punct": "ocean"
+    },
+    {
+      "start": 85.65,
+      "confidence": 1,
+      "end": 86.1,
+      "word": "in",
+      "punct": "in"
+    },
+    {
+      "start": 86.13,
+      "confidence": 0.99,
+      "end": 86.83,
+      "word": "florida",
+      "punct": "Florida"
+    },
+    {
+      "start": 86.85,
+      "confidence": 0.81,
+      "end": 87.02,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 87.03,
+      "confidence": 0.45,
+      "end": 87.25,
+      "word": "think",
+      "punct": "think"
+    },
+    {
+      "start": 87.28,
+      "confidence": 0.52,
+      "end": 87.58,
+      "word": "where",
+      "punct": "where"
+    },
+    {
+      "start": 87.58,
+      "confidence": 0.7,
+      "end": 87.78,
+      "word": "i",
+      "punct": "I"
+    },
+    {
+      "start": 87.77,
+      "confidence": 0.41,
+      "end": 88.02,
+      "word": "threw",
+      "punct": "threw"
+    },
+    {
+      "start": 88.03,
+      "confidence": 0.56,
+      "end": 88.19,
+      "word": "it",
+      "punct": "it"
+    },
+    {
+      "start": 88.18,
+      "confidence": 1,
+      "end": 88.58,
+      "word": "away",
+      "punct": "away"
+    },
+    {
+      "start": 89.87,
+      "confidence": 0.85,
+      "end": 90.05,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 90.05,
+      "confidence": 0.79,
+      "end": 90.41,
+      "word": "appear",
+      "punct": "appear"
+    },
+    {
+      "start": 90.7,
+      "confidence": 0.65,
+      "end": 90.84,
+      "word": "on",
+      "punct": "on"
+    },
+    {
+      "start": 90.93,
+      "confidence": 0.73,
+      "end": 91.17,
+      "word": "our",
+      "punct": "our"
+    },
+    {
+      "start": 91.17,
+      "confidence": 0.74,
+      "end": 91.51,
+      "word": "shores",
+      "punct": "shores."
+    },
+    {
+      "start": 92.3,
+      "confidence": 0.71,
+      "end": 92.54,
+      "word": "they",
+      "punct": "They"
+    },
+    {
+      "start": 92.59,
+      "confidence": 1,
+      "end": 92.9,
+      "word": "rather",
+      "punct": "rather"
+    },
+    {
+      "start": 92.9,
+      "confidence": 1,
+      "end": 93.68,
+      "word": "quickly",
+      "punct": "quickly"
+    },
+    {
+      "start": 94.19,
+      "confidence": 0.82,
+      "end": 94.49,
+      "word": "breaks",
+      "punct": "breaks"
+    },
+    {
+      "start": 94.5,
+      "confidence": 0.99,
+      "end": 94.78,
+      "word": "down",
+      "punct": "down"
+    },
+    {
+      "start": 94.78,
+      "confidence": 1,
+      "end": 95.03,
+      "word": "into",
+      "punct": "into"
+    },
+    {
+      "start": 95.03,
+      "confidence": 0.98,
+      "end": 95.38,
+      "word": "smaller",
+      "punct": "smaller"
+    },
+    {
+      "start": 95.38,
+      "confidence": 1,
+      "end": 95.97,
+      "word": "pieces",
+      "punct": "pieces"
+    },
+    {
+      "start": 95.97,
+      "confidence": 0.98,
+      "end": 96.16,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 96.16,
+      "confidence": 0.63,
+      "end": 96.26,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 96.26,
+      "confidence": 0.41,
+      "end": 96.73,
+      "word": "even",
+      "punct": "even"
+    },
+    {
+      "start": 96.78,
+      "confidence": 0.9,
+      "end": 97.1,
+      "word": "tiny",
+      "punct": "tiny"
+    },
+    {
+      "start": 97.11,
+      "confidence": 0.91,
+      "end": 97.38,
+      "word": "little",
+      "punct": "little"
+    },
+    {
+      "start": 97.39,
+      "confidence": 0.78,
+      "end": 98.08,
+      "word": "favours",
+      "punct": "favours"
+    },
+    {
+      "start": 100.75,
+      "confidence": 0.99,
+      "end": 100.93,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 100.94,
+      "confidence": 0.93,
+      "end": 101.46,
+      "word": "coastline",
+      "punct": "coastline"
+    },
+    {
+      "start": 101.47,
+      "confidence": 0.46,
+      "end": 101.61,
+      "word": "as",
+      "punct": "as"
+    },
+    {
+      "start": 101.63,
+      "confidence": 0.3,
+      "end": 102.18,
+      "word": "homeless",
+      "punct": "homeless."
+    },
+    {
+      "start": 102.85,
+      "confidence": 0.99,
+      "end": 103.1,
+      "word": "you",
+      "punct": "You"
+    },
+    {
+      "start": 103.1,
+      "confidence": 1,
+      "end": 103.35,
+      "word": "can",
+      "punct": "can"
+    },
+    {
+      "start": 103.42,
+      "confidence": 0.66,
+      "end": 103.66,
+      "word": "go",
+      "punct": "go"
+    },
+    {
+      "start": 103.84,
+      "confidence": 0.59,
+      "end": 104.37,
+      "word": "there",
+      "punct": "there."
+    },
+    {
+      "start": 108.76,
+      "confidence": 0.48,
+      "end": 108.9,
+      "word": "hear",
+      "punct": "Hear"
+    },
+    {
+      "start": 108.97,
+      "confidence": 0.79,
+      "end": 109.18,
+      "word": "what",
+      "punct": "what,"
+    },
+    {
+      "start": 109.22,
+      "confidence": 0.93,
+      "end": 109.47,
+      "word": "what",
+      "punct": "what"
+    },
+    {
+      "start": 109.47,
+      "confidence": 1,
+      "end": 109.61,
+      "word": "to",
+      "punct": "to"
+    },
+    {
+      "start": 109.61,
+      "confidence": 1,
+      "end": 109.94,
+      "word": "say",
+      "punct": "say"
+    },
+    {
+      "start": 110.2,
+      "confidence": 0.81,
+      "end": 110.88,
+      "word": "it's",
+      "punct": "it's"
+    },
+    {
+      "start": 110.91,
+      "confidence": 1,
+      "end": 111.12,
+      "word": "so",
+      "punct": "so"
+    },
+    {
+      "start": 111.12,
+      "confidence": 1,
+      "end": 111.56,
+      "word": "obvious",
+      "punct": "obvious"
+    },
+    {
+      "start": 111.56,
+      "confidence": 1,
+      "end": 111.77,
+      "word": "that",
+      "punct": "that"
+    },
+    {
+      "start": 111.77,
+      "confidence": 1,
+      "end": 111.94,
+      "word": "what",
+      "punct": "what"
+    },
+    {
+      "start": 111.94,
+      "confidence": 1,
+      "end": 112.13,
+      "word": "we",
+      "punct": "we"
+    },
+    {
+      "start": 112.13,
+      "confidence": 1,
+      "end": 112.22,
+      "word": "are",
+      "punct": "are"
+    },
+    {
+      "start": 112.22,
+      "confidence": 1,
+      "end": 112.49,
+      "word": "doing",
+      "punct": "doing"
+    },
+    {
+      "start": 112.49,
+      "confidence": 1,
+      "end": 112.77,
+      "word": "here",
+      "punct": "here"
+    },
+    {
+      "start": 112.77,
+      "confidence": 1,
+      "end": 113.02,
+      "word": "is",
+      "punct": "is"
+    },
+    {
+      "start": 113.19,
+      "confidence": 1,
+      "end": 113.43,
+      "word": "like",
+      "punct": "like"
+    },
+    {
+      "start": 113.43,
+      "confidence": 1,
+      "end": 113.52,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 113.52,
+      "confidence": 1,
+      "end": 113.75,
+      "word": "tip",
+      "punct": "tip"
+    },
+    {
+      "start": 113.75,
+      "confidence": 1,
+      "end": 113.85,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 113.85,
+      "confidence": 1,
+      "end": 113.95,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 113.95,
+      "confidence": 1,
+      "end": 114.19,
+      "word": "tip",
+      "punct": "tip"
+    },
+    {
+      "start": 114.19,
+      "confidence": 1,
+      "end": 114.39,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 114.39,
+      "confidence": 1,
+      "end": 114.51,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 114.51,
+      "confidence": 1,
+      "end": 115.11,
+      "word": "iceberg",
+      "punct": "iceberg,"
+    },
+    {
+      "start": 115.86,
+      "confidence": 1,
+      "end": 116.02,
+      "word": "but",
+      "punct": "but"
+    },
+    {
+      "start": 116.02,
+      "confidence": 0.89,
+      "end": 116.24,
+      "word": "it's",
+      "punct": "it's"
+    },
+    {
+      "start": 116.24,
+      "confidence": 1,
+      "end": 116.39,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 116.39,
+      "confidence": 0.92,
+      "end": 116.82,
+      "word": "visible",
+      "punct": "visible"
+    },
+    {
+      "start": 116.82,
+      "confidence": 0.87,
+      "end": 117.05,
+      "word": "to",
+      "punct": "to"
+    },
+    {
+      "start": 117.1,
+      "confidence": 0.62,
+      "end": 117.56,
+      "word": "the",
+      "punct": "the."
+    },
+    {
+      "start": 117.58,
+      "confidence": 1,
+      "end": 117.92,
+      "word": "this",
+      "punct": "This"
+    },
+    {
+      "start": 117.92,
+      "confidence": 1,
+      "end": 118.12,
+      "word": "is",
+      "punct": "is"
+    },
+    {
+      "start": 118.12,
+      "confidence": 1,
+      "end": 118.35,
+      "word": "what",
+      "punct": "what"
+    },
+    {
+      "start": 118.39,
+      "confidence": 0.94,
+      "end": 118.76,
+      "word": "is",
+      "punct": "is"
+    },
+    {
+      "start": 118.78,
+      "confidence": 1,
+      "end": 119.25,
+      "word": "readily",
+      "punct": "readily"
+    },
+    {
+      "start": 119.25,
+      "confidence": 1,
+      "end": 119.91,
+      "word": "available",
+      "punct": "available."
+    },
+    {
+      "start": 121.89,
+      "confidence": 0.84,
+      "end": 122.15,
+      "word": "we",
+      "punct": "We"
+    },
+    {
+      "start": 122.2,
+      "confidence": 0.82,
+      "end": 122.5,
+      "word": "pick",
+      "punct": "pick"
+    },
+    {
+      "start": 122.49,
+      "confidence": 0.98,
+      "end": 122.61,
+      "word": "up",
+      "punct": "up"
+    },
+    {
+      "start": 122.61,
+      "confidence": 1,
+      "end": 122.82,
+      "word": "this",
+      "punct": "this"
+    },
+    {
+      "start": 122.82,
+      "confidence": 0.4,
+      "end": 123.08,
+      "word": "part",
+      "punct": "part."
+    },
+    {
+      "start": 123.23,
+      "confidence": 1,
+      "end": 123.51,
+      "word": "this",
+      "punct": "This"
+    },
+    {
+      "start": 123.51,
+      "confidence": 1,
+      "end": 123.74,
+      "word": "little",
+      "punct": "little"
+    },
+    {
+      "start": 123.74,
+      "confidence": 1,
+      "end": 124,
+      "word": "piece",
+      "punct": "piece"
+    },
+    {
+      "start": 124,
+      "confidence": 0.99,
+      "end": 124.08,
+      "word": "of",
+      "punct": "of"
+    },
+    {
+      "start": 124.08,
+      "confidence": 1,
+      "end": 124.4,
+      "word": "litter",
+      "punct": "litter"
+    },
+    {
+      "start": 124.53,
+      "confidence": 0.99,
+      "end": 124.65,
+      "word": "and",
+      "punct": "and"
+    },
+    {
+      "start": 124.65,
+      "confidence": 1,
+      "end": 124.83,
+      "word": "it's",
+      "punct": "it's"
+    },
+    {
+      "start": 124.83,
+      "confidence": 1,
+      "end": 125.26,
+      "word": "gone",
+      "punct": "gone"
+    },
+    {
+      "start": 125.54,
+      "confidence": 0.99,
+      "end": 125.84,
+      "word": "down",
+      "punct": "down."
+    },
+    {
+      "start": 125.84,
+      "confidence": 0.42,
+      "end": 125.93,
+      "word": "he",
+      "punct": "He"
+    },
+    {
+      "start": 125.94,
+      "confidence": 0.71,
+      "end": 126.15,
+      "word": "won't",
+      "punct": "won't"
+    },
+    {
+      "start": 126.15,
+      "confidence": 0.76,
+      "end": 126.55,
+      "word": "go",
+      "punct": "go"
+    },
+    {
+      "start": 126.62,
+      "confidence": 0.82,
+      "end": 126.76,
+      "word": "to",
+      "punct": "to"
+    },
+    {
+      "start": 126.76,
+      "confidence": 0.89,
+      "end": 126.91,
+      "word": "the",
+      "punct": "the"
+    },
+    {
+      "start": 126.91,
+      "confidence": 0.68,
+      "end": 127.21,
+      "word": "area",
+      "punct": "area."
+    }
+  ]
+}
