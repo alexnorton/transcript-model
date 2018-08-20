@@ -1,6 +1,6 @@
 # transcript-model
 
-[![Build Status](https://travis-ci.org/bbc/transcript-model.svg?branch=master)](https://travis-ci.org/bbc/transcript-model) [![npm](https://img.shields.io/npm/v/transcript-model.svg)](https://www.npmjs.com/package/transcript-model)
+[![Build Status](https://travis-ci.org/alexnorton/transcript-model.svg?branch=master)](https://travis-ci.org/alexnorton/transcript-model) [![npm](https://img.shields.io/npm/v/transcript-model.svg)](https://www.npmjs.com/package/transcript-model)
 
 JSON schema and JavaScript model classes for dealing with time-aligned transcripts of speech.
 
@@ -15,42 +15,41 @@ $ npm install --save transcript-model
 Then
 
 ```js
-const { Transcript } = require("transcript-model");
+const { Transcript } = require('transcript-model');
 
 // Define some transcript JSON
 const json = {
-  speakers: [
-    { name: "Alice" },
-    { name: "Bob" }
-  ],
+  speakers: [{ name: 'Alice' }, { name: 'Bob' }],
   segments: [
     {
       speaker: 0,
       words: [
-        { start: 0.05, end: 0.64, text: "Hello" },
-        { start: 0.70, end: 1.10, text: "Bob!" }
-      ]
+        { start: 0.05, end: 0.64, text: 'Hello' },
+        { start: 0.7, end: 1.1, text: 'Bob!' },
+      ],
     },
     {
       speaker: 1,
       words: [
-        { start: 1.53, end: 1.88, text: "Hi" },
-        { start: 1.92, end: 2.33, text: "Alice." }
-      ]
-    }
-  ]
-}
+        { start: 1.53, end: 1.88, text: 'Hi' },
+        { start: 1.92, end: 2.33, text: 'Alice.' },
+      ],
+    },
+  ],
+};
 
 // Instantiate a Transcript object
 const transcript = Transcript.fromJson(json);
 
 // Do something with it
 console.log(
-    transcript.segments.map(segment => (
-        transcript.speakers.get(segment.speaker).name
-            + ': '
-            + segment.words.map(word => word.text).join(' ')
-    ))
+  transcript.segments
+    .map(
+      segment =>
+        `${transcript.speakers.get(segment.speaker).name}: ${segment.words
+          .map(word => word.text)
+          .join(' ')}`
+    )
     .join('\n')
 );
 
@@ -85,3 +84,7 @@ To write to a file:
 ```
 $ transcript-model --kaldi path/to/transcript.json path/to/segments.json > output.json
 ```
+
+## Author
+
+- [Alex Norton](https://github.com/alexnorton/)
